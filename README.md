@@ -17,4 +17,21 @@ Used for manual control during data collection; allows the driver to steer and t
 Gather the steering angles to determine whether to stop the car or not.For example,if you want your car runs 3 laps and then stop,you can wirte a pregram to sto[ it when the sum of all steering angles equals 1080（360*3）.
 
 ## Software & Code Structure  
-111
+我已经上传了一部分的代码 这一部分是介绍我们用到的软体和代码的作用
+
+## The Overall Training Pipeline
+这一部分是介绍我们训练的大体流程：路由器/车子开机、链接手柄、测试车子性能、终端命令开始收集数据、filezella传数据到自己电脑、训练、返回模型。
+
+## 🟢 Free Run: Implementation and Challenges We Overcame
+这部分介绍我们freerun的训练 主要三点：1.多次变换场地 达到让车子不依赖单一环境的效果 2.故意输入极端情况 给车有正值的输入让他学会应对 3.用陀螺仪实现停止程序。
+
+## Obstacle Run:一个副标题 还没想好
+主要内容就是说我们如何训练障碍跑 比如也是多次随机换柱子 摆好停车区 故意在柱子前放慢转弯等
+
+## 🅿️ Training the Stop Model: Difficulties We Faced and How We Solved Them
+这部分写停车 可以先空着 因为还没做
+
+## 🔚 Conclusion & Future Work
+总结和展望 总结段落
+
+
