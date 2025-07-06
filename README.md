@@ -102,11 +102,15 @@ In the terminal, we start the driving process by entering the following commands
 cd mycar
 python manage.py drive --js
 ```
-This will allow the car to be controlled by the joystick and start recording data. (See the image below)
+This will allow the car to be controlled by the joystick and start recording data. (See the image below)  
+![Terminal1](./Screenshot%202025-07-06%20143555.png)
+![Collecting Data](./Screenshot%202025-07-06%20143620.png)
+
 
 
 ### 4. After all data has been collected  
-I use FileZilla to transfer the data folder to our own computer for model training.
+I use FileZilla to transfer the data folder to our own computer for model training.  
+![FileZilla Transfer](./Screenshot%202025-07-06%20143846.png)
 
 ### 5.Then, on Ubuntu, we run the following commands:
 
