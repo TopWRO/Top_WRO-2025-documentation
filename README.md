@@ -124,6 +124,8 @@ cd mycar
 # c. Train the model using your dataset
 donkey train --tub <your_data_path> --model ./models/mypilot.h5
 ```
+![Start Training](./Screenshot%202025-07-06%20151029.png)
+
 You will get a folder named models, and the .h5 file inside it is the result of the training.  
 If you want to continue training based on an existing model, use the following command:
 
@@ -131,6 +133,7 @@ If you want to continue training based on an existing model, use the following c
 donkey train --tub ./<your_data_path> --model ./models/mypilot.h5 --transfer ./<original_model_path>/mypilot.h5
 ```
 During training, the terminal output will look like this:  
+![During Training](./Screenshot%202025-07-06%20151038.png)
 
 ---
 
@@ -147,8 +150,118 @@ During training, the terminal output will look like this:
 
 ---
 
-## 🅿️ Training the Stop Model: Difficulties We Faced and How We Solved Them  
-*这部分写停车 可以先空着 因为还没做*
+## 🅿️ Solving stop and parking problem: Difficulties We Faced and How We Solved Them  
+### Part 1: How We Make the Car Stop   
+In the Free Run section, our goal was to automatically stop the car after it completed three laps. To achieve this, we used the cumulative yaw angle detected by the gyroscope (final_gyro_degree), and set a threshold of approximately 1080 degrees as the stopping condition.   
+```python
+stop_degree_1 = 1080
+stop_degree_end = 1150
+stop_delate_time = 3
+```   
+   
+In the main loop, the cumulative yaw angle is updated in real-time:
+
+```python
+final_gyro_degree = read_cumulative_yaw()
+```
+
+Once the yaw exceeds the threshold, we command the vehicle to stop:
+```python
+if abs(final_gyro_degree) > stop_degree_end or GPIO.input(gpio_Num) == 1:
+    Run_main = False
+    print('stop at time_end')
+```
+#### 🧩 Problem 1: The Car Didn't Stop Near the Starting Point   
+In practice, we found that stopping the car immediately at 1080° caused it to stop midway through the final curve, rather than near the original starting point. This happens because the vehicle may still be in motion due to the last model prediction.
+
+To fix this, we introduced a 3-second delay after reaching the angle threshold, allowing the car to continue moving before fully stopping. This is implemented as follows:
+```python
+if abs(final_gyro_degree) < stop_degree_1:
+    stop_timer = time.time()
+if time.time() - stop_timer > stop_delate_time:
+    Run_main = False
+    print('stop at delate time')
+```
+
+#### 📉 Problem 2: Inaccuracy in the Gyroscope   
+We also observed that the gyroscope was not always accurate. Even after completing three laps, the cumulative yaw might read too high or too low. This could be due to sensor drift, calibration issues, or environmental noise.
+
+To handle this issue, we implemented two solutions:    
+
+##### 1. Apply a correction factor (gyro_offset)   
+This scale factor slightly adjusts the yaw value during integration:
+```python
+return round(0 - cumulative_yaw * gyro_offset, 0)
+```
+
+##### 2.Tune the stopping threshold
+We tested multiple threshold values (from 1080 to 1150), and finally set:   
+```python
+stop_degree_end = 1150
+```
+This ensured the car stopped only after reliably returning near the starting point.   
+
+
+### Part 2:How the Car Exits the Parking Lot   
+To start running, we first needed the car to exit the parking space autonomously. Because the parking space is narrow and turning radius is limited, we adopted a “twist-out” strategy: drive forward with the wheels turned in one direction, then reverse with the wheels turned the other way, and repeat this pattern until the car is aligned and ready to go.   
+
+#### 💡 Twist-Out Logic
+This logic is implemented in the start_from_parkinglot() function. Here's a simplified explanation of the steps:
+##### 1.Forward with left/right turn:
+```python
+servo_signal = default_servo_signal + 23
+servo_steering_signal = default_servo_steering_signal + 150
+pwm.set_pwm(0, 0, servo_signal)
+pwm.set_pwm(1, 0, servo_steering_signal)
+```
+##### 2.Backward with opposite turn:
+```python
+servo_signal = default_servo_signal - 27
+servo_steering_signal = default_servo_steering_signal - 150
+pwm.set_pwm(0, 0, servo_signal)
+pwm.set_pwm(1, 0, servo_steering_signal)
+```
+
+##### 3.Repeat this sequence, while checking the angle change using the gyroscope:   
+```python
+while abs(final_gyro_degree) < 28:
+    final_gyro_degree = read_cumulative_yaw()
+    time.sleep(0.1)
+```
+
+#### ⚠️ RC Car Safety Mechanism
+Because of the RC car's built-in safety, it doesn't allow immediate switching from forward to reverse. We had to issue the reverse command twice with a short delay to actually engage the reverse motion.   
+
+#### 🤖 Transition to Obstacle Avoidance
+Once the start_from_parkinglot() routine completes, the car is properly oriented and placed on track. At that point, we immediately switch to the trained AI model (obstaclerun) for autonomous driving.
+In the main function, we call:
+```python
+start_from_parkinglot()
+print('start !!!!')
+```
+Then the loop begins where we:
+
+Capture the camera frame
+
+Use the trained obstaclerun model to predict
+
+Convert model outputs to PWM signals
+
+Drive the car accordingly   
+```python
+frame = PiCamera.run(cam)
+outputs = KerasLinear.run(kl, img_arr=frame)
+servo_steering_signal = round(outputs[0], 2)
+servo_signal = round(outputs[1], 2)
+```
+
+#### Summary
+We use a twist-out maneuver to exit the parking lot.
+
+RC car requires double reverse commands due to safety logic.
+
+After parking exit, the car immediately enters AI-based obstacle avoidance mode using our trained model.
+
 
 ---
 
