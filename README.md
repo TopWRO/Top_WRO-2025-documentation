@@ -17,7 +17,7 @@ Acts as the central computing unit, running the software stack, processing camer
 
 2. **PCA9685**  
 Converts numerical steering and throttle outputs into PWM signals, allowing precise control of the servo (for steering) and ESC (for throttle).  
-📷 *(Insert photo here)*
+<img src="./PCA9685.png" alt="PCA9685 Module" width="300"/>
 
 3. **PiCamera**  
 Captures real-time image frames from the car’s perspective, which serve as input to the neural network for decision-making.  
