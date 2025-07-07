@@ -21,7 +21,7 @@ Converts numerical steering and throttle outputs into PWM signals, allowing prec
 
 3. **PiCamera**  
 Captures real-time image frames from the car’s perspective, which serve as input to the neural network for decision-making.  
-📷 *(Insert photo here)*
+<img src="./PiCamera.png" alt="Pi Camera Module" width="300" style="margin: 10px;"/>
 
 4. **PS4 Controller**  
 Used for manual control during data collection; allows the driver to steer and throttle the car while the system records input-output pairs.  
