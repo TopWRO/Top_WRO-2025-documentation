@@ -23,9 +23,9 @@ Converts numerical steering and throttle outputs into PWM signals, allowing prec
 Captures real-time image frames from the car’s perspective, which serve as input to the neural network for decision-making.  
 <img src="./PiCamera.png" alt="Pi Camera Module" width="300" style="margin: 10px;"/>
 
-4. **PS4 Controller**  
+4. **Wireless Controller**  
 Used for manual control during data collection; allows the driver to steer and throttle the car while the system records input-output pairs.  
-📷 *(Insert photo here)*
+ <img src="./Wireless Controller.png" alt="Wireless Controller" width="300"/>
 
 5. **Gyroscope**  
 Tracks cumulative steering angles to determine when the car should stop.  
