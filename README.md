@@ -13,7 +13,7 @@ We encode the car’s **steering angle** and **throttle** as continuous numerica
 
 1. **Raspberry Pi 4**  
 Acts as the central computing unit, running the software stack, processing camera input, and executing the trained AI model in real time.  
-📷 *(Insert photo here)*
+<img src="./RespberryPi4.png" alt="Raspberry Pi 4" width="300"/>
 
 2. **PCA9685**  
 Converts numerical steering and throttle outputs into PWM signals, allowing precise control of the servo (for steering) and ESC (for throttle).  
