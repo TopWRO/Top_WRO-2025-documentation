@@ -5,7 +5,7 @@ This project is developed for the **WRO 2025 Future Engineers competition**. It 
 
 We encode the car’s **steering angle** and **throttle** as continuous numerical outputs, allowing the neural network to learn the correlation between visual input and control signals. During operation, the car generates real-time steering and throttle values based on the current image and the learned patterns. These outputs are then converted into **PWM signals** by the **PCA9685 driver**, which controls the servo and motor accordingly to execute driving behavior.
 
-📷 *(Insert an overview image here)*
+![Cover Image](./coverimage.png)
 
 ---
 
