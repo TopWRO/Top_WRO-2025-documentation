@@ -30,7 +30,7 @@ Used for manual control during data collection; allows the driver to steer and t
 5. **Gyroscope**  
 Tracks cumulative steering angles to determine when the car should stop.  
 For example, if you want the car to stop after completing 3 laps, the program halts once the total steering angle reaches 1080° (360° × 3).  
-📷 *(Insert photo here)*
+<img src="./Gyro.png" alt="Gyroscope Sensor" width="300"/>
 
 ---
 
@@ -103,8 +103,21 @@ cd mycar
 python manage.py drive --js
 ```
 This will allow the car to be controlled by the joystick and start recording data. (See the image below)  
-![Terminal1](./Screenshot%202025-07-06%20143555.png)
-![Collecting Data](./Screenshot%202025-07-06%20143620.png)
+<div align="center">
+  <img src="./Screenshot%202025-07-06%20143555.png"
+       alt="Terminal Output"
+       width="600">
+</div>
+
+
+
+
+<div align="center">
+  <img src="./Screenshot%202025-07-06%20143620.png"
+       alt="Collecting Data"
+       width="600">
+</div>
+
 
 
 
@@ -124,7 +137,11 @@ cd mycar
 # c. Train the model using your dataset
 donkey train --tub <your_data_path> --model ./models/mypilot.h5
 ```
-![Start Training](./Screenshot%202025-07-06%20151029.png)
+<div align="center">
+  <img src="./Screenshot%202025-07-06%20151029.png"
+       alt="Start Training"
+       width="600">
+</div>
 
 You will get a folder named models, and the .h5 file inside it is the result of the training.  
 If you want to continue training based on an existing model, use the following command:
@@ -133,7 +150,11 @@ If you want to continue training based on an existing model, use the following c
 donkey train --tub ./<your_data_path> --model ./models/mypilot.h5 --transfer ./<original_model_path>/mypilot.h5
 ```
 During training, the terminal output will look like this:  
-![During Training](./Screenshot%202025-07-06%20151038.png)
+<div align="center">
+  <img src="./Screenshot%202025-07-06%20151038.png"
+       alt="During Training"
+       width="600">
+</div>
 
 ---
 
