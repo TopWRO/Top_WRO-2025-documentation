@@ -145,8 +145,42 @@ During training, the terminal output will look like this:
 
 ---
 
-## Obstacle Run:一个副标题 还没想好  
-*主要内容就是说我们如何训练障碍跑 比如也是多次随机换柱子 摆好停车区 故意在柱子前放慢转弯等*
+## 🚧 Obstacle Run: Implementation and Training Strategy
+In the WRO 2025 Future Engineers competition, the Obstacle Run part of our project was about making the AI car drive safely through a track with randomly placed red and green pillars. These pillars would change position every time, so the car had to learn how to react to new situations by itself, without following a fixed path. This made the training harder but also more meaningful.
+
+### Our Goal and Difficulties
+Our main goal was to teach the car to avoid the pillars, slow down when needed, and then go back to the center of the road after passing the obstacle. Since the positions of the pillars changed each time, the AI had to be trained to handle different cases, instead of just memorizing one.
+
+### How We Trained the AI
+We used a tool called Donkey Car, which helps train self-driving cars using AI. The training method we used is called behavior cloning, which means the AI learns by watching how humans drive. We collected many driving examples by manually driving the car using a PS4 controller. While we drove, the system recorded the images from the camera and the matching steering and throttle values.
+
+To help the AI learn better, we divided the training into two parts:
+
+#### Driving clockwise around the field.
+#### Driving counter-clockwise.
+For each part, we trained with about 200,000 pieces of data, and we did around 40 to 50 training sessions. In each session, we collected about 4,000 driving examples.
+
+Before each session, we changed the positions of the red and green pillars. This way, the AI saw many different layouts and didn’t get used to just one. We also created some hard situations, like putting the pillars near the center or making quick turns, so the AI could learn to react better.
+
+### What the AI Learned to Do
+During the training, we wanted the car to learn a few important actions:
+
+1)Slow down when getting close to a pillar.
+
+2)Turn the steering wheel just enough to go around the obstacle.
+
+3)Go back to the middle of the road after passing it.
+We used a PiCamera to capture the car’s view, a Raspberry Pi 4 to run the AI model, and a PCA9685 driver to control the motor and steering. After training, the model was saved as a .h5 file and used for real-time driving.
+
+### Results
+After many training rounds, the car became much better at handling obstacles, even when we placed the pillars in totally new positions. It could predict the best path, slow down, and drive safely through the track. Training with both clockwise and counter-clockwise data also made the car smarter and more balanced.
+This project helped us understand how AI can learn from human actions and improve over time. The Obstacle Run part was a big challenge, but also a great experience in using real data to train a smart and flexible self-driving car.
+
+
+
+
+
+*
 
 ---
 
