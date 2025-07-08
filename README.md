@@ -161,10 +161,38 @@ During training, the terminal output will look like this:
 
 
 ## 🟢 Free Run: Implementation and Challenges We Overcame  
-*这部分介绍我们freerun的训练 主要三点：1.多次变换场地 达到让车子不依赖单一环境的效果 2.故意输入极端情况 给车有正值的输入让他学会应对 3.用陀螺仪实现停止程序。*
+## Implementation
 
+To develop a robust and adaptable autonomous vehicle, we used AI models trained on the [Donkey Car](https://www.donkeycar.com/) platform. One of our key goals was to ensure the car could perform well in a wide variety of track conditions—not just a single obstacle layout. To accomplish this, we intentionally changed the positions, types, and arrangements of obstacles during training.
+
+This constant variation expanded the diversity of the model's dataset, allowing it to generalize better and handle new situations it hadn't seen before. Additionally, we included extreme and edge-case scenarios (e.g., tight turns, very close obstacles) in our training data. This forced the model to learn how to react in high-difficulty or uncommon situations, which significantly increased its adaptability and resilience during real-world operation.
+
+We also programmed the car to automatically stop and park after completing exactly **three laps**, as required by the competition rules. To achieve this, we used a **gyroscope sensor** to track the cumulative degrees of turning. Since one full lap involves a complete 360° rotation, the car was programmed to stop once it reached approximately `1080°` (360° × 3 laps).
 
 ---
+
+## Challenges We Overcame
+
+While using the gyroscope sensor for lap counting was effective in theory, it presented issues in practice. Variability in speed, drifting, and sensor noise caused the car to stop too early—often before reaching the designated parking area. This inconsistency was a major problem during testing and could have led to failed runs in the actual competition.
+
+To solve this, we implemented a secondary system using a **color sensor**. The track included a **blue line** marking the start/finish area. We programmed the car to count each time it detected the blue line. After detecting it **11 times**, the car would then enter **parking mode** and execute a final controlled stop.
+
+By combining both gyroscopic and visual detection methods, we achieved a more reliable and accurate system that ensured proper lap completion and successful parking at the end of each run.
+
+---
+
+## Results
+
+Our final implementation successfully met the objectives that we have wanted it to achieve:
+- Navigate the track autonomously using a model trained on the Donkey Car platform.
+- Adapt to various obstacle configurations thanks to diverse and augmented training data.
+- React appropriately to extreme or unusual track situations, demonstrating strong generalization.
+- Accurately track laps using a gyroscope sensor and visual confirmation through a color sensor.
+- Stop and park reliably after completing exactly three laps, in accordance with competition rules.
+
+During testing and trial runs, the car consistently completed its laps and initiated parking at the correct time and position. The combination of machine learning, sensor integration, and layered logic systems resulted in a high degree of performance, robustness, and reliability.
+
+
 
 ## 🚧 Obstacle Run: Implementation and Training Strategy
 In the WRO 2025 Future Engineers competition, the Obstacle Run part of our project was about making the AI car drive safely through a track with randomly placed red and green pillars. These pillars would change position every time, so the car had to learn how to react to new situations by itself, without following a fixed path. This made the training harder but also more meaningful.
