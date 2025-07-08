@@ -161,7 +161,7 @@ During training, the terminal output will look like this:
 
 
 ## 🟢 Free Run: Implementation and Challenges We Overcame  
-## Implementation
+### Implementation
 
 To develop a robust and adaptable autonomous vehicle, we used AI models trained on the [Donkey Car](https://www.donkeycar.com/) platform. One of our key goals was to ensure the car could perform well in a wide variety of track conditions—not just a single obstacle layout. To accomplish this, we intentionally changed the positions, types, and arrangements of obstacles during training.
 
@@ -171,7 +171,7 @@ We also programmed the car to automatically stop and park after completing exact
 
 ---
 
-## Challenges We Overcame
+### Challenges We Overcame
 
 While using the gyroscope sensor for lap counting was effective in theory, it presented issues in practice. Variability in speed, drifting, and sensor noise caused the car to stop too early—often before reaching the designated parking area. This inconsistency was a major problem during testing and could have led to failed runs in the actual competition.
 
@@ -181,7 +181,7 @@ By combining both gyroscopic and visual detection methods, we achieved a more re
 
 ---
 
-## Results
+### Results
 
 Our final implementation successfully met the objectives that we have wanted it to achieve:
 - Navigate the track autonomously using a model trained on the Donkey Car platform.
