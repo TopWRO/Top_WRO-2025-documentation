@@ -1,5 +1,5 @@
 # Top_WRO-2025-documentation
-# 🚗 WRO 2025 Future Engineers - AI Autonomous Driving Project
+# 🚗 WRO 2025 Future Engineers -  Autonomous Driving Project
 
 This project is developed for the **WRO 2025 Future Engineers competition**. It is based on the open-source [DonkeyCar](https://docs.donkeycar.com/) platform and uses **TensorFlow** for machine learning. Inspired by DonkeyCar's modular structure, we designed a system where a camera captures image data, which is then passed to a **CNN neural network** for training. The model learns from this data to detect driving patterns and make predictions in real time during autonomous operation.
 
@@ -349,7 +349,18 @@ After parking exit, the car immediately enters AI-based obstacle avoidance mode 
 ---
 
 ## 🔚 Conclusion & Future Work  
-*总结和展望 总结段*
+Through this project, we demonstrated how a DIY robotic platform like DonkeyCar, when combined with powerful machine learning tools such as TensorFlow, can evolve from a simple manual RC car into a smart, adaptive autonomous vehicle. Rather than relying solely on hard-coded rules, our car learns from human behavior, generalizes to new situations, and makes real-time decisions in complex environments — just like a true AI agent 
+
+We believe this project reflects the future of robotics and transportation. By embracing data-driven methods and neural networks, we’re not just solving problems — we’re building systems that adapt, learn, and improve over time. Compared to traditional rule-based programming, this approach offers greater flexibility, resilience, and intelligence. 
+
+Moving forward, we hope to:
+
+1.Improve obstacle detection with advanced computer vision models 
+
+2.Integrate more sensor fusion techniques to enhance reliability 
+
+
+This journey has been a challenging yet rewarding dive into real-world AI implementation. We’re excited to keep pushing boundaries, one line of Python and one lap at a time! 
 
 
 ---
