@@ -1,5 +1,5 @@
-# Top_WRO-2025-documentation
-# 🚗 WRO 2025 Future Engineers -  Autonomous Driving Project
+<h1 align="center">WRO-2025-documentation</h1>
+#  WRO 2025 Future Engineers -  Autonomous Driving Project
 
 This project is developed for the **WRO 2025 Future Engineers competition**. It is based on the open-source [DonkeyCar](https://docs.donkeycar.com/) platform and uses **TensorFlow** for machine learning. Inspired by DonkeyCar's modular structure, we designed a system where a camera captures image data, which is then passed to a **CNN neural network** for training. The model learns from this data to detect driving patterns and make predictions in real time during autonomous operation.
 
@@ -14,7 +14,7 @@ We encode the car’s **steering angle** and **throttle** as continuous numerica
 </p>
 
 
-## 🧱 Hardware Components
+##  Hardware Components
 
 1. **Raspberry Pi 4**  
 Acts as the central computing unit, running the software stack, processing camera input, and executing the trained AI model in real time.  
@@ -37,11 +37,16 @@ Tracks cumulative steering angles to determine when the car should stop.
 For example, if you want the car to stop after completing 3 laps, the program halts once the total steering angle reaches 1080° (360° × 3).  
 <img src="./Gyro.png" alt="Gyroscope Sensor" width="300"/>
 
+5. **RC Brushed ESC**
+This RC Brushed ESC  is used to control the brushed motor on the remote control car. It can adjust the speed of the motor to achieve forward, reverse and brake functions. It receives signals from the remote control receiver and outputs different currents according to the throttle size to accelerate, decelerate or stop the car. It is the core control component in the power system of the remote control car.
+
+<img src="./RC Brushed ESC.jpg" alt="RC Brushed ESC" width="300"/> 
+
 ---
 
-## 💻 Software & Code Structure
+##  Software & Code Structure
 
-### 🧠 Software:
+###  Software:
 
 - **Raspberry Pi OS**  
   The Linux-based operating system running on the Raspberry Pi, providing the environment for executing scripts and AI models.
@@ -54,7 +59,7 @@ For example, if you want the car to stop after completing 3 laps, the program ha
 
 ---
 
-### 🐍 Python Code:
+###  Python Code:
 
 - [`manage.py`](manage.py)  
   The main entry point of the project; used to initiate training or start autonomous driving.
@@ -86,7 +91,7 @@ For example, if you want the car to stop after completing 3 laps, the program ha
 ---
 
 ## The Overall Training Pipeline  
-## 🛠️ Data Collection and Model Training
+## 🛠 Data Collection and Model Training
 
 ### 1. Hardware Preparation  
 Before training begins, we insert the battery into the car, connect the router, power on the RC car, and pair the controller.
@@ -165,7 +170,7 @@ During training, the terminal output will look like this:
 
 
 
-## 🟢 Free Run: Implementation and Challenges We Overcame  
+##  Free Run: Implementation and Challenges We Overcame  
 ### Implementation
 
 To develop a robust and adaptable autonomous vehicle, we used AI models trained on the [Donkey Car](https://www.donkeycar.com/) platform. One of our key goals was to ensure the car could perform well in a wide variety of track conditions—not just a single obstacle layout. To accomplish this, we intentionally changed the positions, types, and arrangements of obstacles during training.
@@ -199,7 +204,7 @@ During testing and trial runs, the car consistently completed its laps and initi
 
 
 
-## 🚧 Obstacle Run: Implementation and Training Strategy
+##  Obstacle Run: Implementation and Training Strategy
 In the WRO 2025 Future Engineers competition, the Obstacle Run part of our project was about making the AI car drive safely through a track with randomly placed red and green pillars. These pillars would change position every time, so the car had to learn how to react to new situations by itself, without following a fixed path. This made the training harder but also more meaningful.
 
 ### Our Goal and Difficulties
@@ -238,7 +243,7 @@ This project helped us understand how AI can learn from human actions and improv
 
 ---
 
-## 🅿️ Solving stop and parking problem: Difficulties We Faced and How We Solved Them  
+## Solving stop and parking problem: Difficulties We Faced and How We Solved Them  
 ### Part 1: How We Make the Car Stop   
 In the Free Run section, our goal was to automatically stop the car after it completed three laps. To achieve this, we used the cumulative yaw angle detected by the gyroscope (final_gyro_degree), and set a threshold of approximately 1080 degrees as the stopping condition.   
 ```python
@@ -259,7 +264,7 @@ if abs(final_gyro_degree) > stop_degree_end or GPIO.input(gpio_Num) == 1:
     Run_main = False
     print('stop at time_end')
 ```
-#### 🧩 Problem 1: The Car Didn't Stop Near the Starting Point   
+####  Problem 1: The Car Didn't Stop Near the Starting Point   
 In practice, we found that stopping the car immediately at 1080° caused it to stop midway through the final curve, rather than near the original starting point. This happens because the vehicle may still be in motion due to the last model prediction.
 
 To fix this, we introduced a 3-second delay after reaching the angle threshold, allowing the car to continue moving before fully stopping. This is implemented as follows:
@@ -271,7 +276,7 @@ if time.time() - stop_timer > stop_delate_time:
     print('stop at delate time')
 ```
 
-#### 📉 Problem 2: Inaccuracy in the Gyroscope   
+####  Problem 2: Inaccuracy in the Gyroscope   
 We also observed that the gyroscope was not always accurate. Even after completing three laps, the cumulative yaw might read too high or too low. This could be due to sensor drift, calibration issues, or environmental noise.
 
 To handle this issue, we implemented two solutions:    
@@ -293,7 +298,7 @@ This ensured the car stopped only after reliably returning near the starting poi
 ### Part 2:How the Car Exits the Parking Lot   
 To start running, we first needed the car to exit the parking space autonomously. Because the parking space is narrow and turning radius is limited, we adopted a “twist-out” strategy: drive forward with the wheels turned in one direction, then reverse with the wheels turned the other way, and repeat this pattern until the car is aligned and ready to go.   
 
-#### 💡 Twist-Out Logic
+####  Twist-Out Logic
 This logic is implemented in the start_from_parkinglot() function. Here's a simplified explanation of the steps:
 ##### 1.Forward with left/right turn:
 ```python
@@ -317,10 +322,10 @@ while abs(final_gyro_degree) < 28:
     time.sleep(0.1)
 ```
 
-#### ⚠️ RC Car Safety Mechanism
+####  RC Car Safety Mechanism
 Because of the RC car's built-in safety, it doesn't allow immediate switching from forward to reverse. We had to issue the reverse command twice with a short delay to actually engage the reverse motion.   
 
-#### 🤖 Transition to Obstacle Avoidance
+####  Transition to Obstacle Avoidance
 Once the start_from_parkinglot() routine completes, the car is properly oriented and placed on track. At that point, we immediately switch to the trained AI model (obstaclerun) for autonomous driving.
 In the main function, we call:
 ```python
@@ -353,7 +358,7 @@ After parking exit, the car immediately enters AI-based obstacle avoidance mode 
 
 ---
 
-## 🔚 Conclusion & Future Work  
+##  Conclusion & Future Work  
 Through this project, we demonstrated how a DIY robotic platform like DonkeyCar, when combined with powerful machine learning tools such as TensorFlow, can evolve from a simple manual RC car into a smart, adaptive autonomous vehicle. Rather than relying solely on hard-coded rules, our car learns from human behavior, generalizes to new situations, and makes real-time decisions in complex environments — just like a true AI agent 
 
 We believe this project reflects the future of robotics and transportation. By embracing data-driven methods and neural networks, we’re not just solving problems — we’re building systems that adapt, learn, and improve over time. Compared to traditional rule-based programming, this approach offers greater flexibility, resilience, and intelligence. 
