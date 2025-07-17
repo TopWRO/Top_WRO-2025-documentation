@@ -1,9 +1,12 @@
 <h1 align="center">WRO-2025-documentation</h1>
-#  WRO 2025 Future Engineers -  Autonomous Driving Project
+
+# WRO 2025 Future Engineers -  Autonomous Driving Project
 
 This project is developed for the **WRO 2025 Future Engineers competition**. It is based on the open-source [DonkeyCar](https://docs.donkeycar.com/) platform and uses **TensorFlow** for machine learning. Inspired by DonkeyCar's modular structure, we designed a system where a camera captures image data, which is then passed to a **CNN neural network** for training. The model learns from this data to detect driving patterns and make predictions in real time during autonomous operation.
 
-We encode the car’s **steering angle** and **throttle** as continuous numerical outputs, allowing the neural network to learn the correlation between visual input and control signals. During operation, the car generates real-time steering and throttle values based on the current image and the learned patterns. These outputs are then converted into **PWM signals** by the **PCA9685 driver**, which controls the servo and motor accordingly to execute driving behavior.
+We encode the car’s **steering angle** and **throttle** as continuous numerical outputs, allowing the neural network to learn the correlation between visual input and control signals. During operation, the car generates real-time steering and throttle values based on the current image and the learned patterns. These outputs are then converted into **PWM signals** by the **PCA9685 driver**, which controls the servo and motor accordingly to execute driving behavior.   
+
+Link:https://youtu.be/cEDCCi7XaPo?si=7d81ayKwttVvmEN5
 
 ![Cover Image](./coverimage.png)
 <p align="center">
@@ -190,6 +193,29 @@ To solve this, we implemented a secondary system using a **color sensor**. The t
 By combining both gyroscopic and visual detection methods, we achieved a more reliable and accurate system that ensured proper lap completion and successful parking at the end of each run.
 
 ---
+
+### How we save the car while it's stuck.   
+#### 1. How we let the computer know that the car is stuck.   
+The answer is:Capture camera image and compare with the previous frame.We convert the RGB frame to grayscale, then calculate SSIM (structural similarity index) to detect if the car is stuck by comparing with the last frame:   
+```python
+gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+score, _ = ssim(gray, last_frame, full=True)
+if score > 0.90:
+    stuck_counter += 1
+else:
+    stuck_counter = 0
+```
+#### How we know the current situation of the car.   
+We uses the value of gyroz to determine. We store every turn in a variable. When the car gets stuck,we use the current gyroZ - the variable*90 to get the changing angle.For CCW challenge,the car crashes on the outer wall if the value is negative,and crushes on the inner wall if it's positive. The opposite is true for clockwise.   
+```python
+error = abs(angle) - var * 90
+if error > 0:
+    # inner wall
+else:
+    #outer wall
+```
+    
+
 
 ### Results
 
