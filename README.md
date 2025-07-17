@@ -90,11 +90,14 @@ This RC Brushed ESC  is used to control the brushed motor on the remote control 
 
 - [`US2025_Obstaclerun_V01.py`](US2025_Obstaclerun_V01.py)  
   This is the version 1 program for the obstacle run. The car can start at the parking area while there hasn't some code for it to park correctly.
+  
+- [`US2025_ObstacleRun_V11.py`](US2025_ObstacleRun_V11.py)
+  This is the program for obstacle challenge with parking lot.
 
 ---
 
 ## The Overall Training Pipeline  
-## 🛠 Data Collection and Model Training
+##  Data Collection and Model Training
 
 ### 1. Hardware Preparation  
 Before training begins, we insert the battery into the car, connect the router, power on the RC car, and pair the controller.
@@ -401,6 +404,6 @@ This journey has been a challenging yet rewarding dive into real-world AI implem
 
 ---
 
-## 📚 Citation (DonkeyCar parts)
+## Citation (DonkeyCar parts)
 
 > DonkeyCar Contributors. *Donkey Car: A Self Driving Platform for DIY Robotic Cars*. DonkeyCar, 2024, https://docs.donkeycar.com/. Accessed 6 July 2025.
