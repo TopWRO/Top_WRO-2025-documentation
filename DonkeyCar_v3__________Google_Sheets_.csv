@@ -1,0 +1,28 @@
+部件,数量,用途,参考价(USD),购买链接
+Raspberry Pi 5（8GB）主板/套装,1,车载主控,≈$120–$220,https://www.amazon.com/CanaKit-Raspberry-Essentials-Starter-Kit/dp/B0CVQT445P
+3S LiPo 电池 5200mAh（XT60）,2,主电源（驱动+稳压）,≈$35–$45/只,https://www.amazon.com/Zeee-Batteries-Connector-Helicopter-Quadcopter/dp/B0972RKJDS
+5V→USB‑C 降压模块（5A）,1,Pi 5 供电（电池到 USB‑C）,≈$13–$20,https://www.amazon.com/Klnuoxj-Converter-Interface-Waterproof-Compatible/dp/B0CRVW7N2J
+（可选）官方 27W RPi 电源,1,台架/室内调试供电,≈$19–$25,https://www.amazon.com/Official-Type-C-Supply-Raspberry-XYGStudy/dp/B0CSMBR63K
+UBEC 10A 可调（6/7.4/8.4V）,1,舵机/伺服独立稳压供电,≈$18–$28,https://www.amazon.com/SPARKHOBBY-Waterproof-Regulator-Adjustable-Hobbywing/dp/B0DK31PYFZ
+XT60 配电板（PDB‑XT60）,1,主电源分配/焊接出线,≈$12–$22,https://www.amazon.com/PDB-XT60-Distribution-Airplane-Multirotor-Freestyle/dp/B09P46WWYC
+片式保险座 + 保险片,2,主电路过流保护,≈$6–$10,https://www.amazon.com/MCIGICM-Inline-Fuse-Holder-Blade/dp/B081DHT8Y7
+XT60 开关线（防水）,1,主电源断电开关,≈$9–$15,https://www.amazon.com/12V-Inline-Power-Switch/dp/B0DV9B4LNN
+14AWG 高柔硅胶线（红/黑）,1,主电/电机走线,≈$10–$20,https://www.amazon.com/BNTECHGO-Silicone-Flexible-Strands-Stranded/dp/B01AAX65ZK
+XT60 公母头套装（10 对）,1,电源连接标准化,≈$7–$12,https://www.amazon.com/MCIGICM-Upgrade-Female-Bullet-Connectors/dp/B07Q2SJSZ1
+37D 12V 50:1 减速编码电机（带编码器）,2,左右驱动轮（低速高扭矩）,≈$120–$140/只,https://www.ebay.com/itm/326634989359
+双路电机驱动 Cytron MDDS30（30A×2）,1,驱动两侧直流电机,≈$115–$140,https://www.amazon.com/Cytron-MDDS30-SmartDriveDuo-30/dp/B07CRKL32V
+转向舵机 Savox SC‑1256TG,1,前轮转向（高扭矩金属齿）,≈$60–$90,https://www.amazon.com/Savox-SC-1256TG-Titanium-Standard-Digital/dp/B004K3FCHO
+PCA9685 16 路 PWM（I²C）,1,舵机与 PWM 外设驱动,≈$11–$25,https://www.amazon.com/16-Channel-12-bit-Servo-Driver-Interface/dp/B00EIB0U7A
+IMU BNO085,1,姿态/航向融合,≈$15–$35,https://www.amazon.com/BNO085-Precision-Sensor-Interface-Replace/dp/B0F3T788HD
+地面颜色传感器 TCS34725,1,地面颜色/赛道特征,≈$8–$15,https://www.amazon.com/HiLetgo-TCS-34725-TCS34725-Recognition-Arduino/dp/B0749GNL56
+（可选）AS7341 光谱传感器,1,更细分光谱检测,≈$18–$28,https://www.amazon.com/Waveshare-Precision-Compatible-Platforms-Including/dp/B08ZS7JKDD
+LiDAR 入门：LDROBOT D500,1,2D 点云/避障（入门）,≈$120–$170,https://www.amazon.com/LDROBOT-Outdoor-Navigation-Scanning-Support/dp/B0DDKXQ23R
+LiDAR 中档：RPLIDAR A2M12,1,2D 点云/SLAM（中档）,≈$300–$360,https://www.amazon.com/Slamtec-A2M12-Intelligent-Avoidance-Education/dp/B0B44PQZN7
+LiDAR 高端：Hokuyo UST‑10LX,1,工业级避障/定位,"≈$1,400–$1,900",https://www.ebay.com/itm/176433051453
+I²C 多路复用器 TCA9548A,1,多 I²C 设备/地址冲突,≈$9–$15,https://www.amazon.com/HiLetgo-TCA9548A-Multiplexer-Breakout-Expansion/dp/B06XXG5G3L
+I²C 差分端点 QwiicBus PCA9615,2,I²C 长线/抗干扰（前舱）,≈$15–$20/个,https://www.amazon.com/-/he/COM-16988/dp/B098V26F6M
+编码器计数器 LS7366R 模块,2,编码器硬件计数（SPI）,≈$16–$30/个,https://www.amazon.com/initeq-LS7366R-Quadrature-Encoder-Counter/dp/B09WL7TRBD
+随车/外场路由 GL.iNet Slate AX AXT1800,1,5GHz Wi‑Fi 6 旅行路由/AP,≈$110–$150,https://www.amazon.com/GL-iNet-GL-AXT1800-Pocket-Sized-Extender-Repeater/dp/B0B2J7WSDK
+室外大覆盖 AP：Ubiquiti UniFi U6‑LR,1,高覆盖 5GHz AP（需PoE）,≈$150–$220,https://www.amazon.com/Ubiquiti-Long-Range-Adapter-Included-U6-LR-US/dp/B08V1PF29L
+室内高并发 AP：TP‑Link EAP670,1,5GHz 大并发 AP（PoE+）,≈$120–$170,https://www.amazon.com/TP-Link-EAP670-Wireless-Seamless-Integrated/dp/B09ZV19DBP
+PoE+ 注入器（30W）,1,为 U6‑LR/EAP670 供电,≈$20–$35,https://www.amazon.com/TL-PoE160S-Injector-Supplies-Wall-Mount-Certified/dp/B08LZZRX5N
