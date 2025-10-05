@@ -10,15 +10,7 @@
 
 <p align="center"> <img src="./car1.png" alt="car1" width="220"/> <img src="./car2.png" alt="car2" width="220"/> <img src="./car3.png" alt="car3" width="220"/> <img src="./car4.png" alt="car4" width="220"/> </p>
 
-**📋 Quick Navigation**
 
-*   [🆕 What's New in V2.0](https://claude.ai/chat/7eb35712-466a-4ff1-913f-9e862f4c6c16#-whats-new-in-v20-world-finals-upgrade)
-*   [Hardware Evolution](https://claude.ai/chat/7eb35712-466a-4ff1-913f-9e862f4c6c16#-hardware-evolution)
-*   [Core Technical Improvements](https://claude.ai/chat/7eb35712-466a-4ff1-913f-9e862f4c6c16#-core-technical-improvements)
-*   [Software Architecture](https://claude.ai/chat/7eb35712-466a-4ff1-913f-9e862f4c6c16#-software--code-structure)
-*   [Training Pipeline](https://claude.ai/chat/7eb35712-466a-4ff1-913f-9e862f4c6c16#-the-overall-training-pipeline)
-*   [Competition Performance](https://claude.ai/chat/7eb35712-466a-4ff1-913f-9e862f4c6c16#-competition-performance)
-*   [Problem-Solving Journey](https://claude.ai/chat/7eb35712-466a-4ff1-913f-9e862f4c6c16#-problem-solving-journey)
 
 **🆕 What's New in V2.0 (World Finals Upgrade)**
 
