@@ -1,4 +1,189 @@
+# TopWRO – WRO Future Engineers 2025  
 
+This repository contains the documentation for **TopWRO’s robot** in the **World Robot Olympiad (WRO) Future Engineers 2025** category.  
+It includes full details about the robot’s hardware, software, code, obstacle strategies, and lessons learned.  
+
+---
+
+## Table of Contents  
+* [The Team](#the-team)  
+* [The Challenge](#the-challenge)  
+* [The Robot](#the-robot)  
+* [Performance Video](#performance-video)  
+* [Mobility Management](#mobility-management)  
+  * [Powertrain](#powertrain)  
+    * [Drivetrain](#drivetrain)  
+    * [Motor](#motor)  
+    * [Motor Driver](#motor-driver)  
+  * [Steering](#steering)  
+    * [Servo Motor](#servo-motor)  
+  * [Chassis](#chassis)  
+* [Power & Sense Management](#power--sense-management)  
+  * [Battery](#battery)  
+  * [Microcontroller](#microcontroller)  
+  * [IMU](#imu)  
+  * [Camera](#camera)  
+  * [Voltage Regulator](#voltage-regulator)  
+  * [PCB Design](#pcb-design)  
+  * [Circuit Diagram](#circuit-diagram)  
+* [Code for Each Component](#code-for-each-component)  
+  * [Drive Motor](#drive-motor)  
+  * [Servo Motor](#servo-motor-code)  
+  * [Camera](#camera-code)  
+  * [IMU](#imu-code)  
+* [Obstacle Management](#obstacle-management)  
+  * [Qualification Round](#qualification-round)  
+  * [Final Round](#final-round)  
+* [Robot Construction Guide](#robot-construction-guide)  
+  * Step 0 – Print the 3D parts  
+  * Step 1 – Assemble the steering system  
+  * Step 2 – Assemble the powertrain  
+  * Step 3 – Attach the electronics  
+  * Step 4 – Attach the wheels  
+  * Step 5 – Final touches  
+  * Step 6 – Upload the code  
+* [Cost Report](#cost-report)  
+  * 3D Printing Costs  
+  * Other Parts Tested  
+  * Tools and Equipment  
+  * Summary of Costs  
+* [Randomizer](#randomizer)  
+* [Resources](#resources)  
+* [License](#license)  
+
+---
+
+## The Team  
+- **[Your Member 1]** – role & background  
+- **[Your Member 2]** – role & background  
+- **[Your Member 3]** – role & background  
+- **Coach / Mentor** – role & background  
+
+---
+
+## The Challenge  
+The WRO Future Engineers 2025 challenge requires building an autonomous robot capable of:  
+- Completing laps on a dynamic racetrack  
+- Handling randomized obstacles (red/green markers, pillars)  
+- Executing a precise parking maneuver  
+- Showcasing innovation, reliability, and open-source documentation  
+
+---
+
+## The Robot  
+**Name:** [Your Robot’s Name]  
+**Design Goals:** compact, modular, efficient, reliable  
+Insert photos (front, back, top, side views).  
+
+---
+
+## Performance Video  
+[Insert YouTube or demo link]  
+
+---
+
+## Mobility Management  
+### Powertrain  
+#### Drivetrain  
+Describe drivetrain setup (wheels, gears, differential).  
+
+#### Motor  
+Specs of chosen motor and encoder.  
+
+#### Motor Driver  
+Model, features, why chosen.  
+
+### Steering  
+Linkage system / Ackermann steering explanation.  
+
+#### Servo Motor  
+Specs and performance.  
+
+### Chassis  
+3D printed design, weight optimizations, modular assembly.  
+
+---
+
+## Power & Sense Management  
+### Battery  
+Type, specs, mounting system.  
+
+### Microcontroller  
+Board used (e.g., ESP32, Pi), why chosen.  
+
+### IMU  
+Sensor type, calibration, usage for angle correction.  
+
+### Camera  
+Module used (e.g., OpenMV), role in obstacle detection.  
+
+### Voltage Regulator  
+Type, specs, efficiency.  
+
+### PCB Design  
+Description of custom PCB (or proto board).  
+
+### Circuit Diagram  
+Insert diagram.  
+
+---
+
+## Code for Each Component  
+### Drive Motor  
+Code snippet or explanation.  
+
+### Servo Motor Code  
+How steering is controlled.  
+
+### Camera Code  
+Image processing logic.  
+
+### IMU Code  
+Angle correction logic.  
+
+---
+
+## Obstacle Management  
+### Qualification Round  
+Strategy, PID logic, rules followed.  
+
+### Final Round  
+Cube detection, navigation, parking implementation.  
+
+---
+
+## Robot Construction Guide  
+Step-by-step assembly process (with pictures if available).  
+
+---
+
+## Cost Report  
+- 3D Printing Costs  
+- Electronics costs  
+- Tools & Equipment  
+- Total  
+
+---
+
+## Randomizer  
+(If applicable – explain or link code).  
+
+---
+
+## Resources  
+- 3D Models  
+- Images  
+- External references  
+
+---
+
+## License  
+MIT License (or whichever license applies).  
+
+
+---
+---
+---
 
 
 
