@@ -137,7 +137,8 @@ After winning the **US National Championship in July 2025**, we completely redes
 **Core Components:**
 - Raspberry Pi 4 - Central computing unit
 - RC Brushed Motor + ESC - Drive system with PWM control  
-  <img src="./RC Brushed ESC.jpg" alt="RC ESC" width="300"/>
+  ![ESC Module](https://m.media-amazon.com/images/I/51mrGBwAEeL._AC_SL1500_.jpg)
+
 - RC Servo - Steering via PCA9685 PWM driver  
   <img src="./PCA9685.png" alt="PCA9685" width="300"/>
 - PiCamera - Vision input for AI model  
