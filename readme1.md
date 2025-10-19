@@ -140,7 +140,7 @@ After winning the **US National Championship in July 2025**, we completely redes
   <img src="https://m.media-amazon.com/images/I/51mrGBwAEeL._AC_SL1500_.jpg" width="300">
 
 - RC Servo - Steering via PCA9685 PWM driver  
-  <img src="./PCA9685.png" alt="PCA9685" width="300"/>
+  <img src="https://i.erli.pl/51ntos.314eb0.xl.jpg" width="300">
 - PiCamera - Vision input for AI model  
   <img src="./PiCamera.png" alt="PiCamera" width="300"/>
 - WT901 Gyroscope - Heading estimation  
