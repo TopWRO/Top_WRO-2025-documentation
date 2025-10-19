@@ -71,18 +71,28 @@ After winning the US National Championship with V1.0, we completely redesigned t
 ---
 
 ## The Team
+![Team Photo](image/IMG_0939.jpeg)
 
-**🔴 [MISSING: Team member information needed]**
+**Zhengyi Jin:** 
 
-Suggested format:
-```markdown
-- **[Name]** - Role (e.g., Lead Programmer, Hardware Engineer, AI Specialist)
-  - Background: [school/experience]
-- **[Name]** - Role
-  - Background: [school/experience]
-- **Coach/Mentor:** [Name]
-  - Affiliation: [organization]
-```
+- School: Chino Hills High School 
+- Background: Passionate about AI robotics and aiming to purse computer engineering and artificial intelligence in the future,skilled in Python and Java, specializing in AI-based control systems and autonomous driving algorithms.
+
+**Zhenshen Yi:** 
+
+- School: Ruben S. Ayala High School
+- Background: Skilled in Python and C++, with experience in OpenCV-based object tracking and Rasberry Pi control. Previously completed in VEX Robotics and handled programming for autonomous mode.
+
+**Victor Zhang:**
+
+- School:Army and Navy Academy
+- Background: Completed in WRO 2024 Robot Mission, gaining experience in progamming, robot calibration and strategic task execution. Skilled in teamwork and documentation for competition preparation.
+
+**Coach- Fei Guo:** 
+
+- Guided multiple student teams in robotics competitions, including WRO Robot Mission and Future Engineers categories.
+- Experienced STEM and robotics educator with a strong focus on project-based earning and interdisciplinary innovation.
+- Focus on culticating both technical competence and leadership skills in students, preparing them for future innovation chanllenges
 
 **Team Name:** Top Scholars  
 **Competition:** WRO 2025 Future Engineers  
@@ -458,10 +468,10 @@ Model Output (-1.0 to +1.0)
 |-----------|-------------------|
 | **Operating System** | Raspberry Pi OS (Bookworm) - Linux-based |
 | **ML Framework** | TensorFlow 2.x (CPU inference on Pi 5) |
-| **Training Platform** | DonkeyCar v4.x **🔴 [MISSING: Exact version?]** |
+| **Training Platform** | DonkeyCar v4.5.0.2|
 | **Motor Control** | Build HAT Python Library (official) |
 | **Vision** | OpenCV 4.x, picamera2 |
-| **Language** | Python 3.11 **🔴 [MISSING: Exact Python version?]** |
+| **Language** | Python 3.11 |
 
 ### Code Structure
 ```
@@ -1198,8 +1208,82 @@ def start_from_parkinglot():
 - Precise encoder-based positioning
 - Faster exit sequence
 
-**🔴 [MISSING: V2.0 parking lot exit code if different from V1.0]**
+**V2.0 parking lot exit code:**
+```python
+def alignment_sequence(drive_mode, heading):
 
+    if drive_mode not in ("OCW", "OCCW"):
+        return
+
+    steer = LegoSteering()
+    throttle = LegoThrottle(max_speed=30)
+
+    def print_yaw():
+        y = heading.get()
+        sys.stdout.write("\rYaw:{:+8.2f} deg".format(y))
+        sys.stdout.flush()
+
+    def wait_until(cond):
+        while True:
+            y = heading.get()
+            print_yaw()
+            if cond(y):
+                break
+            time.sleep(0.01)
+        print()
+
+    def settle(duration, step=0.02):
+        end_time = time.monotonic() + duration
+        while time.monotonic() < end_time:
+            _ = heading.get()
+            print_yaw()
+            time.sleep(step)
+
+    turn_r = lambda: steer.run(+1)
+    turn_l = lambda: steer.run(-1
+                               )
+    stop_m = lambda: throttle.run(0.0)
+    fwd    = lambda: throttle.run(+0.5)
+    back   = lambda: throttle.run(-0.5)
+
+    try:
+        if drive_mode == "OCW":
+            turn_r();  settle(0.4)
+            fwd();  wait_until(lambda y: y >  55);  stop_m()
+
+
+
+            turn_l();  settle(0.4)
+            fwd();  wait_until(lambda y: y <  20);  stop_m()
+
+        else:  # OCCW
+            turn_l();  settle(0.4)
+            fwd();  wait_until(lambda y: y < -55);  stop_m()
+
+
+            turn_r();  settle(0.4)
+            fwd();  wait_until(lambda y: y > -20);  stop_m()
+
+        print("car will stop and Gyro settle 3 s ...")
+        stop_m()
+        steer.shutdown()
+        throttle.shutdown()
+
+        t0 = time.time()
+        while time.time() - t0 < 3.0:
+            yaw_now = heading.get()
+            sys.stdout.write("\rIdle yaw:{:+.2f} ".format(yaw_now))
+            sys.stdout.flush()
+            time.sleep(0.02)
+        print()
+
+    except KeyboardInterrupt:
+        pass
+    finally:
+        stop_m()
+        steer.shutdown()
+        throttle.shutdown()
+```
 ---
 
 ## Lessons Learned
