@@ -4,9 +4,9 @@
 
 <div align="center">
 
-**🏆 US National Champions (July 2025)**  
-**🌏 World Finals Competitors (November 2025)**  
-**📅 Last Updated: October 2025**
+**US National Champions (July 2025)**  
+**World Finals Competitors (November 2025)**  
+**Last Updated: October 2025**
 
 </div>
 
@@ -16,6 +16,10 @@
   <img src="./car3.png" alt="car3" width="220"/>
   <img src="./car4.png" alt="car4" width="220"/>
 </p>
+<p align="center">
+  <img src=./image/nationalChampionship.webp alt=National Championship>
+</p>
+</div>
 
 ---
 
@@ -51,13 +55,32 @@
 
 ## Project Overview
 
-This project is developed for the **WRO 2025 Future Engineers** competition. Built on the open-source [DonkeyCar](https://docs.donkeycar.com/) platform and powered by **TensorFlow**, our autonomous vehicle evolved from a simple RC car into an intelligent agent capable of real-time decision-making.
+This project is developed for the **WRO 2025 Future Engineers** competition. Built on the open-source [DonkeyCar](https://docs.donkeycar.com/) platform and powered by **TensorFlow**, our autonomous vehicle evolved from a simple RC car into an intelligent agent capable of real-time decision-making.   
+<div align="center">
+  <img src="./image/donkeyCar.png" alt="Donkeycar Logo" width="400">
+  <img src="./image/tensorflowLogo.jpg" alt="Tensorflow logo" width="400">
+</div>
 
 **Core Approach:**  
-We use **Behavior Cloning** — the AI learns from human driving examples. A camera captures images while we manually drive, recording steering angles and throttle values. The trained CNN model then predicts control signals during autonomous operation, converting them to motor commands via the Raspberry Pi Build HAT.
+<table>
+  <tr>
+    <td width="60%">
+      <img src="./image/donkeyUI.png" alt="Donkeycar UI" width="100%">
+      <p align="center"><i>Image from Donkeycar Documentation</i></p>
+    </td>
+    <td width="40%" valign="top">
+      We use <b>Behavior Cloning</b> — the AI learns from human driving examples. A camera captures images while we manually drive, recording steering angles and throttle values. The trained CNN model then predicts control signals during autonomous operation, converting them to motor commands via the Raspberry Pi Build HAT.
+    </td>
+  </tr>
+</table>
 
-**Philosophy Shift:**  
-After winning the US National Championship with V1.0, we completely redesigned the system for the World Finals. Our new philosophy: **Stability over Speed**. V2.0 prioritizes reliability, precision control, and comprehensive environmental awareness.
+<div align="center">
+  <h1>⚡ Philosophy Shift ⚡</h1>
+  <h2>After winning the US National Championship with V1.0,<br>we <b>completely redesigned</b> the system for the World Finals</h2>
+  <h2> <b>Stability over Speed</b> </h2>
+  <h3>V2.0 prioritizes reliability, precision control, and comprehensive environmental awareness</h3>
+</div>
+
 
 ---
 
@@ -102,9 +125,6 @@ After winning the US National Championship with V1.0, we completely redesigned t
 
 ## The Robot
 
-**🔴 [MISSING: Robot name needed]**  
-*Suggested names: "StarTracker", "Phoenix", "Navigator", "Pathfinder"*
-
 **Design Philosophy:**  
 Stability-first autonomous vehicle with 360° environmental awareness, precision motor control, and advanced sensor fusion.
 
@@ -115,7 +135,14 @@ Stability-first autonomous vehicle with 360° environmental awareness, precision
 - ✅ Full bidirectional navigation capability
 - ✅ AI-powered obstacle avoidance + deterministic parking
 
-**Robot Photos:** See above
+**Robot Photos:** 
+<p align="center">
+  <img src="./image/" alt="carFront" width="220"/>
+  <img src="./image/" alt="carBack" width="220"/>
+  <img src="./image" alt="carLeft" width="220"/>
+  <img src="./image" alt="carAbove" width="220"/>
+</p>
+---
 
 ---
 
@@ -196,18 +223,32 @@ After winning the **US National Championship in July 2025**, we completely redes
 ### Computing & Control
 
 #### Raspberry Pi 5
-<img src="./RespberryPi4.png" alt="Raspberry Pi" width="300"/>
+<table>
+<tr>
+<td width="300">
+<img src="./image/raspberryPi5.jpg" alt="Raspberry Pi 5" width="300"/>
+</td>
+<td>
 
-- **Model:** Raspberry Pi 5 **🔴 [MISSING: 4GB or 8GB variant?]**
+- **Model:** Raspberry Pi 5 RAM 8GB
 - **Operating System:** Raspberry Pi OS (Bookworm)
-- **CPU:** **🔴 [MISSING: Broadcom BCX-XXXX, X cores @ X.X GHz]**
-- **RAM:** **🔴 [MISSING: Confirm 4GB/8GB]**
+- **CPU:** Broadcom BCM2712
+- **RAM:** 8GB
 - **Role:** Main controller running software stack, AI inference, sensor fusion
 - **Interfaces Used:**
   - CSI: PiCamera
   - GPIO: Build HAT communication, ToF XSHUT pins
   - I2C: ToF sensors
   - USB-C: Power input
+
+</td>
+</tr>
+</table>
+
+#### Raspberry Pi Build HAT
+<table>
+<tr>
+<td>
 
 #### Raspberry Pi Build HAT
 - **Model:** Raspberry Pi Build HAT
@@ -220,19 +261,32 @@ After winning the **US National Championship in July 2025**, we completely redes
 - **Python Library:** `buildhat` (official)
 - **Non-blocking Control:** Enables simultaneous steering + driving
 
+</td>
+<td width="300">
+<img src="./image/buildHat.jpg" alt="Raspberry Pi Build HAT" width="300"/>
+</td>
+</tr>
+</table>
+
 #### Sense HAT
-- **Model:** Sense HAT **🔴 [MISSING: v1 or v2?]**
+<table>
+<tr>
+<td>
+
+#### Sense HAT
+- **Model:** Sense HAT 
 - **Sensors Used:**
   - **IMU:** Gyroscope + Accelerometer + Magnetometer (optional)
   - **Joystick:** 5-direction input for model selection
   - **LED Matrix:** Status display (8×8)
-- **Specifications:**
-  - Gyroscope Range: **🔴 [MISSING: ±X dps (degrees per second)]**
-  - Accelerometer Range: **🔴 [MISSING: ±X g]**
-  - Magnetometer Range: **🔴 [MISSING: ±X µT]**
-  - Sampling Rate: 300 Hz (software configured in `HeadingEstimator`)
-  - Calibration: 5-second stationary bias estimation
-  - Drift: <2°/minute (with ZUPT correction)
+
+</td>
+<td width="300">
+<img src="./image/senseHat.webp" alt="Sense HAT" width="300"/>
+</td>
+</tr>
+</table>
+
 
 ---
 
@@ -242,36 +296,32 @@ After winning the **US National Championship in July 2025**, we completely redes
 
 **Configuration:** Rear-wheel drive with synchronized dual motors
 
-**Motors:** 2× LEGO Technic Medium Angular Motors
-- **Ports:** B & C (Build HAT)
+**Motors:** 2× LEGO  Medium Angular Motors
+<table>
+<tr>
+<td>
+
+#### LEGO Medium Angular Motor
+- **Ports:** A & B & C (Build HAT)
 - **Control:** Coupled via `MotorPair` class
-- **Model:** **🔴 [MISSING: LEGO part number, e.g., 45303]**
+- **Model:** 88018 (LEGO Item Number: 6386708)   
 - **Specifications:**
-  - Max RPM: **🔴 [MISSING: RPM at 100% speed]**
-  - Torque: **🔴 [MISSING: N⋅cm]**
-  - Encoder Resolution: **🔴 [MISSING: Pulses per revolution]**
-  - Gear Ratio: **🔴 [MISSING: X:Y ratio between motor and wheels]**
+  - Max RPM: 185 RPM ±15%
+  - Torque: 3.5 N·cm @ 135 RPM ±15% MAX
+  - Encoder Resolution: 360 counts per revolution   
 - **Software Speed:** 30% max (competition setting, configurable to 100%)
 - **Quantization:** 10% speed steps (code rounds to nearest 10)
 - **Stop Behavior:** Active brake (not coast)
 
+</td>
+<td width="300">
+<img src="./image/legoMediumAngularMotor.webp" alt="LEGO Medium Angular Motor" width="300"/>
+</td>
+</tr>
+</table>
 **Physical Connection:**
 Motors are physically connected via LEGO gearbox system (compliant with WRO rule 11.3)
 
-#### Steering System
-
-**Mechanism:** Front-wheel steering via single motor  
-**🔴 [MISSING: Clarify if true Ackermann geometry or simple center-point steering]**
-
-**Motor:** 1× LEGO Medium Angular Motor
-- **Port:** A (Build HAT)
-- **Model:** **🔴 [MISSING: LEGO part number]**
-- **Steering Range:**
-  - Physical: ±70° (hardware setting in `LegoSteering` class)
-  - Software Limit: ±50° (safety limit in `gyro_motor_tof_v_07.py`)
-- **Control Speed:** 100 steps/sec
-- **Precision:** ±1° (thanks to encoder feedback)
-- **Angle Offset:** 0.7× (multiplier applied to model output in `Iman_drive03.py`)
 
 **Control Flow:**
 ```
@@ -287,12 +337,6 @@ Model Output (-1.0 to +1.0)
 **Construction:** Full LEGO Technic  
 **Materials:** LEGO beams, pins, axles (no 3D printed parts in V2.0)
 
-**Specifications:**
-- **Weight:** **🔴 [MISSING: Total weight in grams/kg]**
-- **Dimensions:** **🔴 [MISSING: Length × Width × Height in mm/cm]**
-- **Wheelbase:** **🔴 [MISSING: Distance between front and rear axles]**
-- **Track Width:** **🔴 [MISSING: Distance between left and right wheels]**
-
 **Design Features:**
 - Modular assembly for easy maintenance
 - Low center of gravity for stability
@@ -304,23 +348,29 @@ Model Output (-1.0 to +1.0)
 
 #### Primary Battery: 2× 7.4V LiPo
 
+<table>
+<tr>
+<td width="300">
+<img src="./image/battery.JPG" alt="Battery" width="300"/>
+</td>
+<td>
+
+#### Battery
 - **Type:** Lithium Polymer (LiPo)
 - **Voltage:** 7.4V (2S configuration)
-- **Capacity:** **🔴 [MISSING: mAh rating, e.g., 2200mAh]**
 - **Powers:** Build HAT (7.5-9V input requirement)
   - Motors draw current through Build HAT
-- **Discharge Rate:** **🔴 [MISSING: C-rating, e.g., 25C]**
-- **Runtime:** **🔴 [MISSING: Typical runtime at 30% throttle, e.g., 45 minutes]**
-- **Mounting:** **🔴 [MISSING: How secured to chassis?]**
+
+</td>
+</tr>
+</table>
 
 #### Auxiliary Power: USB Power Bank
 
 - **Type:** USB Power Bank
 - **Output:** 5V / 3A (USB-C)
 - **Powers:** Raspberry Pi 5 only
-- **Capacity:** **🔴 [MISSING: mAh rating, e.g., 10000mAh]**
-- **Runtime:** **🔴 [MISSING: Typical runtime, e.g., 2+ hours]**
-- **Model:** **🔴 [MISSING: Brand/model if relevant]**
+
 
 #### Power Distribution Diagram
 ```
@@ -359,7 +409,6 @@ Model Output (-1.0 to +1.0)
 - Raspberry Pi 5 requires 5V → supplied by USB-C power bank
 - Sensors (ToF, Color Sensor) powered by Pi's 3.3V/5V GPIO rails
 
-**🔴 [MISSING: Any voltage regulators/converters used?]**
 
 ---
 
@@ -367,10 +416,16 @@ Model Output (-1.0 to +1.0)
 
 #### Vision: PiCamera
 
-<img src="./PiCamera.png" alt="PiCamera" width="300"/>
 
-- **Model:** **🔴 [MISSING: PiCamera v2 / HQ / v3? Part number?]**
-- **Sensor:** **🔴 [MISSING: IMX219 / IMX477 / etc.]**
+<table>
+<tr>
+<td width="300">
+<img src="./image/8MP IMX219 175 Degree Ultra Wide Angle Raspberry Pi Camera Module.jpg" alt="Camera Module" width="300"/>
+</td>
+<td>
+
+#### Camera Module
+- **Model:** 8MP IMX219 175 Degree Ultra Wide Angle Raspberry Pi Camera Module
 - **Interface:** CSI (Camera Serial Interface)
 - **Resolution:**
   - Capture: 176 × 132 pixels
@@ -378,19 +433,31 @@ Model Output (-1.0 to +1.0)
 - **Frame Rate:** 30 FPS
 - **Fixed Parameters** (critical for consistent training/deployment):
 ```python
-  CAMERA_FRAMERATE = 30
-  PICAMERA_AWB_MODE = 'off'           # No auto white balance
-  PICAMERA_EXPOSURE_MODE = 'off'       # Manual exposure
-  PICAMERA_ISO = 100
-  PICAMERA_SHUTTER_SPEED = 15000       # µs (≈ 1/67 second)
-  PICAMERA_AWB_GAINS = (1.5, 1.2)      # Manual red/blue gains
-  PICAMERA_EXPOSURE_COMPENSATION = 0
+CAMERA_FRAMERATE = 30
+PICAMERA_AWB_MODE = 'off'           # No auto white balance
+PICAMERA_EXPOSURE_MODE = 'off'       # Manual exposure
+PICAMERA_ISO = 100
+PICAMERA_SHUTTER_SPEED = 15000       # µs (≈ 1/67 second)
+PICAMERA_AWB_GAINS = (1.5, 1.2)      # Manual red/blue gains
+PICAMERA_EXPOSURE_COMPENSATION = 0
 ```
 - **Why Manual Settings?**  
   Prevents camera from adapting to lighting changes during competition, ensuring model sees consistent images
 
+</td>
+</tr>
+</table>
 #### Distance: 4× VL53L0X ToF Sensors
+<table>
+<tr>
+<td width="300">
+<img src="./image/VL53L0x.jpg" alt="VL53L0X ToF Sensor" width="300"/>
+</td>
+<td>
 
+#### VL53L0X Time-of-Flight Sensor   
+
+   
 - **Model:** VL53L0X Time-of-Flight (laser ranging)
 - **Manufacturer:** STMicroelectronics
 - **Specifications:**
@@ -407,14 +474,14 @@ Model Output (-1.0 to +1.0)
     - **Left:** 0x2D (XSHUT on GPIO 26)
 - **Initialization Sequence:**
 ```python
-  # Power off all sensors
-  for pin in [21, 27, 22, 26]:
-      GPIO.output(pin, GPIO.LOW)
-  
-  # Power on one-by-one, assign unique addresses
-  for pin, addr in zip([21, 27, 22, 26], [0x2A, 0x2B, 0x2C, 0x2D]):
-      GPIO.output(pin, GPIO.HIGH)
-      sensor.set_address(addr)
+# Power off all sensors
+for pin in [21, 27, 22, 26]:
+    GPIO.output(pin, GPIO.LOW)
+
+# Power on one-by-one, assign unique addresses
+for pin, addr in zip([21, 27, 22, 26], [0x2A, 0x2B, 0x2C, 0x2D]):
+    GPIO.output(pin, GPIO.HIGH)
+    sensor.set_address(addr)
 ```
 - **Filtering:** EWMA (Exponential Weighted Moving Average)
   - Formula: `filtered = 0.3 × old + 0.7 × new`
@@ -425,22 +492,21 @@ Model Output (-1.0 to +1.0)
   - **Lateral:** Right sensor detects parking lot boundaries
   - **Emergency Stop:** Any sensor <100mm triggers immediate stop
 
-#### Line Detection: Color Sensor
+</td>
+</tr>
+</table>
 
-- **Model:** **🔴 [MISSING: Which Build HAT-compatible color sensor? LEGO part number?]**
-- **Port:** D (Build HAT)
-- **Detection Method:** RGBI (Red, Green, Blue, Intensity)
-- **Detected Colors:**
-  - **Blue:** Starting line (darkness-based detection with hysteresis)
-  - **Orange:** **🔴 [MISSING: What is orange used for? Markers?]**
-- **Sampling Rate:** 50 Hz (threaded background reading)
-- **Algorithm:** `ColorLineCounterThreaded` class
-  - Dynamic baseline adjustment (EMA on intensity)
-  - Hysteresis to prevent bouncing (enter threshold ≠ exit threshold)
-  - Debounce: Minimum 30ms hold time, 80ms gap between detections
 
 #### Heading: Sense HAT IMU
 
+<table>
+<tr>
+<td width="300">
+<img src="./image/senseHatIMU.png" alt="Sense HAT IMU" width="300"/>
+</td>
+<td>
+
+#### Sense HAT IMU
 - **Components Used:**
   - Gyroscope (primary)
   - Accelerometer (for ZUPT - Zero Velocity Update)
@@ -458,7 +524,12 @@ Model Output (-1.0 to +1.0)
 - **Performance:** <2°/minute drift (vs >10°/min in V1.0)
 - **Output:** Continuous heading in degrees (can exceed ±360°)
 
+</td>
+</tr>
+</table>
+
 ---
+
 
 ## Software Architecture
 
@@ -848,7 +919,6 @@ donkey train --tub <your_data_path> --model ./models/mypilot.h5 \
 **Backup: ColorLineCounterThreaded**
 - Detects blue line crossings
 - Stop condition: 11× blue line detections
-- 🔴 **[MISSING: Why 11 instead of 3? Does car cross line multiple times per lap?]**
 
 **3. Final Stop**
 - Execute controlled deceleration
@@ -888,9 +958,6 @@ donkey train --tub <your_data_path> --model ./models/mypilot.h5 \
 3. Use ToF sensors for precision alignment
 4. Final position: Parallel to wall (±2cm tolerance)
 
-**🔴 [MISSING: Detailed parking sequence code/logic]**
-
-Suggested content based on earlier discussion:
 ```python
 # Parking Sequence (CCW Example)
 # Step 1: Approach parking zone
@@ -918,7 +985,6 @@ gyro_turn(30, 0)  # Straighten wheels
 ```
 
 ---
-
 ## Technical Deep Dive
 
 ### 1. Advanced Heading Estimation
