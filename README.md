@@ -1487,13 +1487,11 @@ We believe in giving back to the community. All our code is open source:
 
 ## License
 
-**🔴 [MISSING: License file needed]**
 
-**Suggested:**
 ```
 MIT License
 
-Copyright (c) 2025 Top Scholars WRO Team
+Copyright (c) 2025 Top Scholar Engineers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
