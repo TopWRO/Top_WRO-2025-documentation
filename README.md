@@ -86,10 +86,8 @@ This project is developed for the **WRO 2025 Future Engineers** competition. Bui
 
 ## Competition Videos
 
-- **🎬 Full Competition Run:** [YouTube Link](https://youtu.be/cEDCCi7XaPo?si=7d81ayKwttVvmEN5)
-- **🔴 [MISSING: Open Challenge video link]**
-- **🔴 [MISSING: Obstacle Challenge video link]**
-- **🔴 [MISSING: Parking demonstration video link]**
+- ** Competition Run:** [YouTube Link]([https://youtu.be/cEDCCi7XaPo?si=7d81ayKwttVvmEN5](https://youtu.be/cEDCCi7XaPo?si=UrSpBroxmGeDPVLr))
+
 
 ---
 
