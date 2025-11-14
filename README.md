@@ -6,21 +6,38 @@
 
 **US National Champions (July 2025)**  
 **World Finals Competitors (November 2025)**  
-**Last Updated: October 2025**
+**Last Updated: November 2025**
+
+
+
 
 </div>
-
-<p align="center">
-  <img src="./car1.png" alt="car1" width="220"/>
-  <img src="./car2.png" alt="car2" width="220"/>
-  <img src="./car3.png" alt="car3" width="220"/>
-  <img src="./car4.png" alt="car4" width="220"/>
-</p>
 <p align="center">
   <img src=./image/nationalChampionship.webp alt=National Championship>
 </p>
 </div>
 
+
+### Robot Overview
+<img src="./image/overallRCcar.JPG" width="80%"/>
+
+---
+
+### Detailed Views
+
+| Front | Back |
+|:---:|:---:|
+| <img src="./image/frontView.JPG" width="350"/> | <img src="./image/backSide.JPG" width="350"/> |
+
+| Left | Right |
+|:---:|:---:|
+| <img src="./image/leftSide.JPG" width="350"/> | <img src="./image/rightSide.JPG" width="350"/> |
+
+| Top View |
+|:---:|
+| <img src="./image/topView.JPG" width="350"/> |
+
+</div>
 ---
 
 ## Table of Contents
@@ -133,13 +150,7 @@ Stability-first autonomous vehicle with 360° environmental awareness, precision
 - ✅ Full bidirectional navigation capability
 - ✅ AI-powered obstacle avoidance + deterministic parking
 
-**Robot Photos:** 
-<p align="center">
-  <img src="./image/" alt="carFront" width="220"/>
-  <img src="./image/" alt="carBack" width="220"/>
-  <img src="./image" alt="carLeft" width="220"/>
-  <img src="./image" alt="carAbove" width="220"/>
-</p>
+
 ---
 
 ---
