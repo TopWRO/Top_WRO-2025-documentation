@@ -813,9 +813,7 @@ python Adafruit_LCD1602.py                 # LCD screen
 python _Control_RCcar_with_KB.py           # Manual motor control
 ```
 
-<div align="center">
-  <img src="./Screenshot%202025-07-06%20143555.png" alt="Terminal Output" width="600">
-</div>
+
 
 ### Phase 2: Data Collection
 
@@ -826,7 +824,20 @@ python manage.py drive --js
 ```
 
 <div align="center">
-  <img src="./Screenshot%202025-07-06%20143620.png" alt="Collecting Data" width="600">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="./assets/Screenshot%202025-07-06%20143620.png" width="450"/><br/>
+        <b>Data Collection Process</b><br/>
+        <em>Recording training data with real-time controller input</em>
+      </td>
+      <td align="center">
+        <img src="./assets/Screenshot%202025-07-06%20143555.png" width="450"/><br/>
+        <b>System Initialization</b><br/>
+        <em>Starting the autonomous driving system with camera feed</em>
+      </td>
+    </tr>
+  </table>
 </div>
 
 **Key Differences from V1.0:**
@@ -864,7 +875,7 @@ PICAMERA_AWB_GAINS = (1.5, 1.2)   # Manual red/blue gains
 ```
 
 <div align="center">
-  <img src="./Screenshot%202025-07-06%20143846.png" alt="FileZilla Transfer" width="600">
+  <img src="./assets/Screenshot%202025-07-06%20143846.png" alt="FileZilla Transfer" width="600">
 </div>
 
 **Training Process:**
@@ -881,8 +892,26 @@ donkey train --tub <your_data_path> --model ./models/mypilot.h5 \
 ```
 
 <div align="center">
-  <img src="./Screenshot%202025-07-06%20151029.png" alt="Start Training" width="600">
-  <img src="./Screenshot%202025-07-06%20151038.png" alt="During Training" width="600">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="./assets/Screenshot%202025-07-06%20151029.png" width="480"/>
+      </td>
+      <td align="center">
+        <img src="./assets/Screenshot%202025-07-06%20151038.png" width="480"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <b>Training Initialization</b><br/>
+        Starting model training with collected data
+      </td>
+      <td align="center">
+        <b>Training in Progress</b><br/>
+        Model learning from training frames
+      </td>
+    </tr>
+  </table>
 </div>
 
 **Output:** `mypilot.h5` (Keras model file)
@@ -1388,8 +1417,8 @@ Rather than scrapping everything, we identified specific pain points (gyro drift
 ### What We Learned About AI in Robotics
 
 **Behavior Cloning is Powerful, But...**
-- ✅ **Strengths:** Fast to train, intuitive to collect data, works well in structured environments
-- ⚠️ **Limitations:** Struggles with novel situations, requires diverse training data, can't reason about physics
+- **Strengths:** Fast to train, intuitive to collect data, works well in structured environments
+- **Limitations:** Struggles with novel situations, requires diverse training data, can't reason about physics
 
 **The Human-AI Partnership**
 
@@ -1469,13 +1498,6 @@ pwm.set_motor(drive_channel, speed)
 - **TensorFlow Tutorial:** https://www.tensorflow.org/tutorials
 - **WRO Official Site:** https://wro-association.org/
 
-### Media
-- **Photos:** `car1.png` - `car4.png`, `coverimage.png`
-- **Component Photos:** `RespberryPi4.png`, `PCA9685.png`, `PiCamera.png`, `Gyro.png`, `RC Brushed ESC.jpg`, `Wireless Controller.png`
-- **Screenshots:** Training process, data collection interface
-- **Videos:** 
-  - Full Competition Run: [YouTube](https://youtu.be/cEDCCi7XaPo)
-  - **🔴 [MISSING: Additional video links]**
 
 ### Code Repository
 - **Main repo:** [This GitHub]
@@ -1537,7 +1559,7 @@ SOFTWARE.
 
 <div align="center">
 
-**🏁 From Chino Hills to Singapore**
+**From Chino Hills to Singapore**
 
 *Thank you for following our journey!*
 
