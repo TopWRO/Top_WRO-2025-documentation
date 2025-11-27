@@ -103,6 +103,8 @@ This project is developed for the **WRO 2025 Future Engineers** competition. Bui
 
 ## Competition Videos
 
+- Free Run CCW: https://youtu.be/pXDh_eAmsTM?si=xZtBjxg6nWc1JEZR
+- Free Run CW: https://youtu.be/yxz2qGAbTLQ?si=qqKZnGQW2v-66H6v
 - Competition Run: https://youtu.be/cEDCCi7XaPo?si=7d81ayKwttVvmEN5](https://youtu.be/cEDCCi7XaPo?si=UrSpBroxmGeDPVLr
 
 
