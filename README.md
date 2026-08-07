@@ -6,7 +6,7 @@
 
 **US National Champions (July 2025)**  
 **World Finals Competitors (November 2025)**  
-**Last Updated: November 2025**
+**Last Updated: August 2026**
 
 
 
