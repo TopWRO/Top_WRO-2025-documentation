@@ -7,35 +7,25 @@
 **US National Champions (July 2025)**  
 **World Finals Competitors (November 2025)**  
 **Last Updated: August 2026**
+**New Journey: August 2026 Chicago Affiliate Cup**.  
 
 
 
 
-</div>
-<p align="center">
-  <img src=./image/nationalChampionship.webp alt=National Championship>
-</p>
-</div>
 
-
-### Robot Overview
-<img src="./image/overallRCcar.JPG" width="80%"/>
-
----
-
-### Detailed Views
+### Robot Detailed Views
 
 | Front | Back |
 |:---:|:---:|
-| <img src="./image/frontView.JPG" width="350"/> | <img src="./image/backSide.JPG" width="350"/> |
+| <img src="./image/newFront.jpg" width="350"/> | <img src="./image/newBack.jpg" width="350"/> |
 
 | Left | Right |
 |:---:|:---:|
-| <img src="./image/leftSide.JPG" width="350"/> | <img src="./image/rightSide.JPG" width="350"/> |
+| <img src="./image/newLeft.jpg" width="350"/> | <img src="./image/newRight.jpg" width="350"/> |
 
 | Top View |
 |:---:|
-| <img src="./image/topView.JPG" width="350"/> |
+| <img src="./image/newTop.jpg" width="350"/> |
 
 </div>
 ---
