@@ -101,7 +101,7 @@ This project is developed for the **WRO 2025 Future Engineers** competition. Bui
 ---
 
 ## The Team
-![Team Photo](image/IMG_0939.jpeg)
+![Team Photo](image/Team.jpg)
 
 **Zhengyi Jin:** 
 
@@ -113,10 +113,10 @@ This project is developed for the **WRO 2025 Future Engineers** competition. Bui
 - School: Ruben S. Ayala High School
 - Background: Skilled in Python and C++, with experience in OpenCV-based object tracking and Rasberry Pi control. Previously completed in VEX Robotics and handled programming for autonomous mode.
 
-**Victor Zhang:**
+**May Liu:**
 
-- School:Army and Navy Academy
-- Background: Completed in WRO 2024 Robot Mission, gaining experience in progamming, robot calibration and strategic task execution. Skilled in teamwork and documentation for competition preparation.
+- School:
+- Background: 
 
 **Coach- Fei Guo:** 
 
