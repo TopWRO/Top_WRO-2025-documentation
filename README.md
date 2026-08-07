@@ -113,10 +113,10 @@ This project is developed for the **WRO 2025 Future Engineers** competition. Bui
 - School: Ruben S. Ayala High School
 - Background: Skilled in Python and C++, with experience in OpenCV-based object tracking and Rasberry Pi control. Previously completed in VEX Robotics and handled programming for autonomous mode.
 
-**May Liu:**
+**Ruling Liu:**
 
-- School:
-- Background: 
+- School: Mt.San Antonio College
+- Background: Competed in WRO 2024 Robot Mission and WRO 2025 RoboSports, gaining hands-on experience in EV3 programming, robot calibration, troubleshooting, and problem-solving. Contributed to programming, testing, and team strategy while developing stronger teamwork and practical engineering skills.   
 
 **Coach- Fei Guo:** 
 
