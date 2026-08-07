@@ -125,7 +125,7 @@ This project is developed for the **WRO 2025 Future Engineers** competition. Bui
 - Focus on culticating both technical competence and leadership skills in students, preparing them for future innovation chanllenges
 
 **Team Name:** Top Scholars  
-**Competition:** WRO 2025 Future Engineers  
+**Competition:** WRO 2025/2026 Future Engineers  
 **Location:** Chino Hills, California, USA
 
 ---
