@@ -246,29 +246,7 @@ After winning the **US National Championship in July 2025**, we completely redes
 </tr>
 </table>
 
-#### Raspberry Pi Build HAT
-<table>
-<tr>
-<td>
-
-#### Raspberry Pi Build HAT
-- **Model:** Raspberry Pi Build HAT
-- **Function:** Direct LEGO motor control with encoder feedback
-- **Specifications:**
-  - Motor Ports: 4 (A, B, C, D)
-  - Input Voltage: 7.5-9V DC
-  - Control Method: Closed-loop with built-in encoder reading
-  - Communication: Via GPIO pins to Raspberry Pi
-- **Python Library:** `buildhat` (official)
-- **Non-blocking Control:** Enables simultaneous steering + driving
-
-</td>
-<td width="300">
-<img src="./image/buildHat.jpg" alt="Raspberry Pi Build HAT" width="300"/>
-</td>
-</tr>
-</table>
-
+#### 
 #### Sense HAT
 <table>
 <tr>
@@ -301,28 +279,6 @@ After winning the **US National Championship in July 2025**, we completely redes
 <table>
 <tr>
 <td>
-
-#### LEGO Medium Angular Motor
-- **Ports:** A & B & C (Build HAT)
-- **Control:** Coupled via `MotorPair` class
-- **Model:** 88018 (LEGO Item Number: 6386708)   
-- **Specifications:**
-  - Max RPM: 185 RPM ±15%
-  - Torque: 3.5 N·cm @ 135 RPM ±15% MAX
-  - Encoder Resolution: 360 counts per revolution   
-- **Software Speed:** 30% max (competition setting, configurable to 100%)
-- **Quantization:** 10% speed steps (code rounds to nearest 10)
-- **Stop Behavior:** Active brake (not coast)
-
-</td>
-<td width="300">
-<img src="./image/legoMediumAngularMotor.webp" alt="LEGO Medium Angular Motor" width="300"/>
-</td>
-</tr>
-</table>
-**Physical Connection:**
-Motors are physically connected via LEGO gearbox system (compliant with WRO rule 11.3)
-
 
 **Control Flow:**
 ```
