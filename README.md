@@ -269,7 +269,8 @@ After winning the **US National Championship in July 2025**, we completely redes
 
 ---
 
-### Mobility System
+### Mobility System.  
+
 #### DYNAMIXEL XL330-M288-T
 - **Ports:** TTL Serial Bus
 - **Control:** DYNAMIXEL Protocol 2.0 via DYNAMIXEL SDK
@@ -292,7 +293,8 @@ After winning the **US National Championship in July 2025**, we completely redes
 <img src="./image/dynamixel.png" alt="DYNAMIXEL XL330-M288-T" width="300"/>
 </td>
 </tr>
-</table>
+</table>   
+
 #### Drivetrain
 
 **Configuration:** Rear-wheel drive with synchronized dual motors
