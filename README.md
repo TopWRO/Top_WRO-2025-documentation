@@ -153,7 +153,7 @@ After winning the **US National Championship in July 2025**, we completely redes
 
 ### Major Changes Summary
 
-| Aspect | V1.0 (Nationals) | V2.0 (World Finals) ⭐ |
+| Aspect | V1.0 (Nationals) | V2.0 (World Finals) |
 |--------|-----------------|----------------------|
 | **Controller** | Raspberry Pi 4 | Raspberry Pi 5 + Build HAT |
 | **Drive Motors** | 1× RC brushed motor (PWM) | 2× LEGO Technic Medium Angular Motors |
