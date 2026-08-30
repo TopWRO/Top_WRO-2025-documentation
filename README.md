@@ -270,7 +270,29 @@ After winning the **US National Championship in July 2025**, we completely redes
 ---
 
 ### Mobility System
+#### DYNAMIXEL XL330-M288-T
+- **Ports:** TTL Serial Bus
+- **Control:** DYNAMIXEL Protocol 2.0 via DYNAMIXEL SDK
+- **Model:** XL330-M288-T
+- **Specifications:**
+  - No-Load Speed: 103 RPM @ 5.0 V
+  - Stall Torque: 0.52 N·m @ 5.0 V
+  - Gear Ratio: 288.35 : 1
+  - Encoder Resolution: 4096 counts per revolution
+  - Position Sensor: 12-bit contactless absolute encoder
+  - Operating Voltage: 3.7–6.0 V (5.0 V recommended)
+- **Operating Modes:** Current, Velocity, Position, Extended Position, Current-Based Position, and PWM Control
+- **Communication:** TTL Serial, DYNAMIXEL Protocol 2.0
+- **Software Speed:** Configurable through velocity control
+- **Position Range:** 0–360° in Position Control Mode; multi-turn supported in Extended Position Control Mode
+- **Stop Behavior:** Active holding/braking with torque enabled
 
+</td>
+<td width="300">
+<img src="./image/dynamixel.png" alt="DYNAMIXEL XL330-M288-T" width="300"/>
+</td>
+</tr>
+</table>
 #### Drivetrain
 
 **Configuration:** Rear-wheel drive with synchronized dual motors
