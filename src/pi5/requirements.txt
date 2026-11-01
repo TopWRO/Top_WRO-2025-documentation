@@ -1,0 +1,10 @@
+# Raspberry Pi 5 (Raspberry Pi OS 64-bit) - Python packages used by src/pi5
+# Install inside the project virtual environment (never with sudo pip).
+# TODO: pin the exact versions installed on the car (`pip freeze` on the Pi).
+donkeycar[pi]        # camera part, tub writer, KerasLinear pilot (pulls TensorFlow)
+dynamixel-sdk        # DYNAMIXEL Protocol 2.0 over the U2D2
+pyserial             # USB CDC link to the Pico 2 sensor hub
+opencv-python        # image resize, HSV tools
+numpy
+pygame               # PS4 controller for manual driving / data collection
+sense-hat            # joystick + LED matrix used for CW/CCW confirmation

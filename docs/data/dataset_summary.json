@@ -1,0 +1,742 @@
+{
+ "source": "TopWRO/wro-fe-2026 data_* tubs (catalog files only)",
+ "bins": {
+  "count": 41,
+  "min": -1.0,
+  "max": 1.0
+ },
+ "total_records": 203732,
+ "groups": {
+  "Obstacle CCW": {
+   "records": 92708,
+   "tubs": 29,
+   "angle_hist": [
+    2513,
+    0,
+    1045,
+    0,
+    1745,
+    0,
+    3027,
+    0,
+    5224,
+    0,
+    3543,
+    0,
+    5733,
+    0,
+    5221,
+    0,
+    1662,
+    0,
+    0,
+    0,
+    54213,
+    0,
+    0,
+    0,
+    1674,
+    0,
+    2355,
+    0,
+    1986,
+    0,
+    1034,
+    0,
+    914,
+    0,
+    364,
+    0,
+    92,
+    0,
+    171,
+    0,
+    192
+   ],
+   "throttle_hist": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    5,
+    0,
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    124,
+    0,
+    186,
+    0,
+    346,
+    0,
+    345,
+    0,
+    713,
+    0,
+    1053,
+    0,
+    3036,
+    0,
+    10865,
+    0,
+    76023
+   ]
+  },
+  "Obstacle CW": {
+   "records": 90528,
+   "tubs": 28,
+   "angle_hist": [
+    814,
+    0,
+    356,
+    0,
+    383,
+    0,
+    456,
+    0,
+    950,
+    0,
+    1056,
+    0,
+    2319,
+    0,
+    3270,
+    0,
+    957,
+    0,
+    0,
+    0,
+    53706,
+    0,
+    0,
+    0,
+    2104,
+    0,
+    3447,
+    0,
+    3856,
+    0,
+    3335,
+    0,
+    4315,
+    0,
+    3094,
+    0,
+    1067,
+    0,
+    1599,
+    0,
+    3444
+   ],
+   "throttle_hist": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    72,
+    0,
+    78,
+    0,
+    185,
+    0,
+    259,
+    0,
+    513,
+    0,
+    1499,
+    0,
+    3651,
+    0,
+    8879,
+    0,
+    75390
+   ]
+  },
+  "Open CCW": {
+   "records": 8640,
+   "tubs": 3,
+   "angle_hist": [
+    21,
+    0,
+    0,
+    0,
+    32,
+    0,
+    137,
+    0,
+    593,
+    0,
+    470,
+    0,
+    513,
+    0,
+    448,
+    0,
+    142,
+    0,
+    0,
+    0,
+    6188,
+    0,
+    0,
+    0,
+    27,
+    0,
+    39,
+    0,
+    13,
+    0,
+    17,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "throttle_hist": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    4,
+    0,
+    2,
+    0,
+    8,
+    0,
+    25,
+    0,
+    45,
+    0,
+    273,
+    0,
+    1139,
+    0,
+    7141
+   ]
+  },
+  "Open CW": {
+   "records": 8650,
+   "tubs": 3,
+   "angle_hist": [
+    0,
+    0,
+    1,
+    0,
+    3,
+    0,
+    1,
+    0,
+    13,
+    0,
+    22,
+    0,
+    75,
+    0,
+    143,
+    0,
+    50,
+    0,
+    0,
+    0,
+    6181,
+    0,
+    0,
+    0,
+    280,
+    0,
+    508,
+    0,
+    615,
+    0,
+    256,
+    0,
+    276,
+    0,
+    126,
+    0,
+    26,
+    0,
+    43,
+    0,
+    31
+   ],
+   "throttle_hist": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    5,
+    0,
+    5,
+    0,
+    26,
+    0,
+    25,
+    0,
+    44,
+    0,
+    19,
+    0,
+    16,
+    0,
+    8505
+   ]
+  },
+  "Unlabelled CW": {
+   "records": 3206,
+   "tubs": 1,
+   "angle_hist": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    12,
+    0,
+    59,
+    0,
+    38,
+    0,
+    122,
+    0,
+    48,
+    0,
+    46,
+    0,
+    0,
+    0,
+    1986,
+    0,
+    0,
+    0,
+    26,
+    0,
+    70,
+    0,
+    94,
+    0,
+    120,
+    0,
+    295,
+    0,
+    173,
+    0,
+    63,
+    0,
+    54,
+    0,
+    0
+   ],
+   "throttle_hist": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    47,
+    0,
+    108,
+    0,
+    104,
+    0,
+    2945
+   ]
+  }
+ },
+ "by_date": {
+  "2026-07-29": {
+   "Obstacle CCW": 7804,
+   "Obstacle CW": 6994
+  },
+  "2026-07-30": {
+   "Open CCW": 2151,
+   "Open CW": 3052,
+   "Obstacle CCW": 5631,
+   "Obstacle CW": 5085
+  },
+  "2026-08-02": {
+   "Obstacle CW": 58621,
+   "Open CCW": 6489,
+   "Open CW": 5598,
+   "Obstacle CCW": 51960
+  },
+  "2026-08-03": {
+   "Obstacle CCW": 27313,
+   "Obstacle CW": 19828,
+   "Unlabelled CW": 3206
+  }
+ },
+ "tubs": {
+  "data_Ocw07": {
+   "group": "Obstacle CW",
+   "records": 4869
+  },
+  "data_TSP_Fccw001": {
+   "group": "Open CCW",
+   "records": 3505
+  },
+  "data_TSP_Fccw01": {
+   "group": "Open CCW",
+   "records": 2151
+  },
+  "data_TSP_Fccw02": {
+   "group": "Open CCW",
+   "records": 2984
+  },
+  "data_TSP_Fcw001": {
+   "group": "Open CW",
+   "records": 3522
+  },
+  "data_TSP_Fcw01": {
+   "group": "Open CW",
+   "records": 3052
+  },
+  "data_TSP_Fcw02": {
+   "group": "Open CW",
+   "records": 2076
+  },
+  "data_TSP_Occw001": {
+   "group": "Obstacle CCW",
+   "records": 2388
+  },
+  "data_TSP_Occw002": {
+   "group": "Obstacle CCW",
+   "records": 3719
+  },
+  "data_TSP_Occw003": {
+   "group": "Obstacle CCW",
+   "records": 3004
+  },
+  "data_TSP_Occw004": {
+   "group": "Obstacle CCW",
+   "records": 2368
+  },
+  "data_TSP_Occw005": {
+   "group": "Obstacle CCW",
+   "records": 3990
+  },
+  "data_TSP_Occw007": {
+   "group": "Obstacle CCW",
+   "records": 2693
+  },
+  "data_TSP_Occw008": {
+   "group": "Obstacle CCW",
+   "records": 3020
+  },
+  "data_TSP_Occw009": {
+   "group": "Obstacle CCW",
+   "records": 2690
+  },
+  "data_TSP_Occw01": {
+   "group": "Obstacle CCW",
+   "records": 3891
+  },
+  "data_TSP_Occw02": {
+   "group": "Obstacle CCW",
+   "records": 3913
+  },
+  "data_TSP_Occw03": {
+   "group": "Obstacle CCW",
+   "records": 3000
+  },
+  "data_TSP_Occw04": {
+   "group": "Obstacle CCW",
+   "records": 2631
+  },
+  "data_TSP_Occw05": {
+   "group": "Obstacle CCW",
+   "records": 3112
+  },
+  "data_TSP_Occw06": {
+   "group": "Obstacle CCW",
+   "records": 3244
+  },
+  "data_TSP_Occw07": {
+   "group": "Obstacle CCW",
+   "records": 3208
+  },
+  "data_TSP_Occw08": {
+   "group": "Obstacle CCW",
+   "records": 3047
+  },
+  "data_TSP_Occw09": {
+   "group": "Obstacle CCW",
+   "records": 3492
+  },
+  "data_TSP_Occw10": {
+   "group": "Obstacle CCW",
+   "records": 3350
+  },
+  "data_TSP_Occw11": {
+   "group": "Obstacle CCW",
+   "records": 3216
+  },
+  "data_TSP_Occw12": {
+   "group": "Obstacle CCW",
+   "records": 3184
+  },
+  "data_TSP_Occw13": {
+   "group": "Obstacle CCW",
+   "records": 3205
+  },
+  "data_TSP_Occw14": {
+   "group": "Obstacle CCW",
+   "records": 3764
+  },
+  "data_TSP_Occw15": {
+   "group": "Obstacle CCW",
+   "records": 3214
+  },
+  "data_TSP_Occw16": {
+   "group": "Obstacle CCW",
+   "records": 3389
+  },
+  "data_TSP_Occw17": {
+   "group": "Obstacle CCW",
+   "records": 3027
+  },
+  "data_TSP_Occw18": {
+   "group": "Obstacle CCW",
+   "records": 3069
+  },
+  "data_TSP_Occw19": {
+   "group": "Obstacle CCW",
+   "records": 3351
+  },
+  "data_TSP_Occw20": {
+   "group": "Obstacle CCW",
+   "records": 3088
+  },
+  "data_TSP_Ocw001": {
+   "group": "Obstacle CW",
+   "records": 2119
+  },
+  "data_TSP_Ocw002": {
+   "group": "Obstacle CW",
+   "records": 1905
+  },
+  "data_TSP_Ocw003": {
+   "group": "Obstacle CW",
+   "records": 1848
+  },
+  "data_TSP_Ocw004": {
+   "group": "Obstacle CW",
+   "records": 2746
+  },
+  "data_TSP_Ocw005": {
+   "group": "Obstacle CW",
+   "records": 3590
+  },
+  "data_TSP_Ocw006": {
+   "group": "Obstacle CW",
+   "records": 3161
+  },
+  "data_TSP_Ocw007": {
+   "group": "Obstacle CW",
+   "records": 1472
+  },
+  "data_TSP_Ocw009": {
+   "group": "Obstacle CW",
+   "records": 2987
+  },
+  "data_TSP_Ocw01": {
+   "group": "Obstacle CW",
+   "records": 4482
+  },
+  "data_TSP_Ocw02": {
+   "group": "Obstacle CW",
+   "records": 2512
+  },
+  "data_TSP_Ocw03": {
+   "group": "Obstacle CW",
+   "records": 2572
+  },
+  "data_TSP_Ocw04": {
+   "group": "Obstacle CW",
+   "records": 2513
+  },
+  "data_TSP_Ocw05": {
+   "group": "Obstacle CW",
+   "records": 6231
+  },
+  "data_TSP_Ocw06": {
+   "group": "Obstacle CW",
+   "records": 4508
+  },
+  "data_TSP_Ocw08": {
+   "group": "Obstacle CW",
+   "records": 3181
+  },
+  "data_TSP_Ocw09": {
+   "group": "Obstacle CW",
+   "records": 4455
+  },
+  "data_TSP_Ocw10": {
+   "group": "Obstacle CW",
+   "records": 3149
+  },
+  "data_TSP_Ocw11": {
+   "group": "Obstacle CW",
+   "records": 3375
+  },
+  "data_TSP_Ocw12": {
+   "group": "Obstacle CW",
+   "records": 3574
+  },
+  "data_TSP_Ocw13": {
+   "group": "Obstacle CW",
+   "records": 3311
+  },
+  "data_TSP_Ocw14": {
+   "group": "Obstacle CW",
+   "records": 3090
+  },
+  "data_TSP_Ocw15": {
+   "group": "Obstacle CW",
+   "records": 3103
+  },
+  "data_TSP_Ocw16": {
+   "group": "Obstacle CW",
+   "records": 3000
+  },
+  "data_TSP_Ocw17": {
+   "group": "Obstacle CW",
+   "records": 3022
+  },
+  "data_TSP_Ocw18": {
+   "group": "Obstacle CW",
+   "records": 3028
+  },
+  "data_TSP_Ocw19": {
+   "group": "Obstacle CW",
+   "records": 3257
+  },
+  "data_TSP_Ocw20": {
+   "group": "Obstacle CW",
+   "records": 3468
+  },
+  "data_TSP_cw008": {
+   "group": "Unlabelled CW",
+   "records": 3206
+  },
+  "data_tsp_occw006": {
+   "group": "Obstacle CCW",
+   "records": 3441
+  }
+ }
+}

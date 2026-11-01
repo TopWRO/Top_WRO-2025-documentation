@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="510.377431pt" height="278.729508pt" viewBox="0 0 510.377431 278.729508" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 278.729508 
+L 510.377431 278.729508 
+L 510.377431 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 430.554098 260.729508 
+L 439.555279 260.729508 
+L 439.555279 35.7 
+L 430.554098 35.7 
+z
+" clip-path="url(#p5a7b74d259)" style="fill: #3b3b38"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 378.503358 70.470863 
+L 337.955262 261.23466 
+L 242.573363 240.960612 
+L 283.12146 50.196815 
+z
+" clip-path="url(#p5a7b74d259)" style="fill: #f2f2f0; stroke: #52514e; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <defs>
+     <path id="m4c81330a56" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: #ffffff"/>
+    </defs>
+    <g clip-path="url(#p5a7b74d259)">
+     <use xlink:href="#m4c81330a56" x="369.769922" y="111.55845" style="fill: #2a78d6; stroke: #ffffff"/>
+    </g>
+   </g>
+   <g id="line2d_2">
+    <g clip-path="url(#p5a7b74d259)">
+     <use xlink:href="#m4c81330a56" x="346.688698" y="220.147073" style="fill: #2a78d6; stroke: #ffffff"/>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <path d="M 310.538361 155.715738 
+L 310.538361 88.206885 
+" clip-path="url(#p5a7b74d259)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #8a8984"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="444.055869" y="55.519475" transform="rotate(-0 444.055869 55.519475)">straight wall</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 371.725077 111.974031 
+Q 400.161139 118.018303 426.628716 123.64416 
+" style="fill: none; stroke: #2a78d6; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 423.131949 120.856218 
+L 426.628716 123.64416 
+L 422.300303 124.768809 
+z
+" style="fill: #2a78d6; stroke: #2a78d6; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="400.16201" y="111.267603" transform="rotate(-0 400.16201 111.267603)">R1</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 348.646615 220.563242 
+Q 388.621756 229.06022 426.628413 237.138784 
+" style="fill: none; stroke: #2a78d6; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 423.131646 234.350843 
+L 426.628413 237.138784 
+L 422.3 238.263433 
+z
+" style="fill: #2a78d6; stroke: #2a78d6; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="388.621398" y="222.309259" transform="rotate(-0 388.621398 222.309259)">R2</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 338.532958 215.223528 
+Q 349.425123 163.97992 360.317288 112.736312 
+" style="fill: none; stroke: #52514e; stroke-linecap: round"/>
+    <path d="M 341.3209 211.726761 
+L 338.532958 215.223528 
+L 337.408309 210.895114 
+" style="fill: none; stroke: #52514e; stroke-linecap: round"/>
+    <path d="M 357.529346 116.233079 
+L 360.317288 112.736312 
+L 361.441936 117.064726 
+" style="fill: none; stroke: #52514e; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(328.58364 183.80847) rotate(-78)">d = 14.8 cm</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 310.953851 153.761007 
+Q 317.5558 122.701283 323.832314 93.172602 
+" style="fill: none; stroke: #0b0b0b; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 321.044372 96.669369 
+L 323.832314 93.172602 
+L 324.956963 97.501016 
+z
+" style="fill: #0b0b0b; stroke: #0b0b0b; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="312.788656" y="79.205705" transform="rotate(-0 312.788656 79.205705)">θ</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #0b0b0b" transform="translate(25.500984 52.28615)">Right wall:</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #0b0b0b" transform="translate(25.500984 64.889021)">  θ = atan2(R2 − R1, d)</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #0b0b0b" transform="translate(25.500984 77.491071)"/>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #0b0b0b" transform="translate(25.500984 90.149724)">Left wall:</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #0b0b0b" transform="translate(25.500984 102.752595)">  θ = atan2(L1 − L2, d)</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(25.500984 165.231223)">Both rays are perpendicular</text>
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(25.500984 175.491023)">to the body, so their lengths</text>
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(25.500984 185.750823)">differ by exactly d·tan θ,</text>
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(25.500984 196.010623)">independent of the distance</text>
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(25.500984 206.270423)">to the wall.</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="18" y="29.7" transform="rotate(-0 18 29.7)">Wall angle from a same-side ToF pair</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5a7b74d259">
+   <rect x="18" y="35.7" width="457.56" height="225.029508"/>
+  </clipPath>
+ </defs>
+</svg>
